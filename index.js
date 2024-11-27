@@ -1,4 +1,3 @@
-// import { courses } from 'data/list.js'
 const courses = [
     {
         name: 'Молекулярный 5П-нутрициолог',
@@ -363,7 +362,13 @@ const radiosResult = document.querySelectorAll('input[name="result"]');
 let onRadiosCategory
 let onRadiosResult
 let onDuration
-let newCourses
+let newCourses = []
+let neNutrition = []
+let newSport = []
+let newEatingBehavior = []
+let newBeauty = []
+
+render(courses)
 
 // Cнимаем показания с формы
 formBlock.addEventListener('click', function() {
@@ -401,7 +406,7 @@ buttonReset.addEventListener('click', function() {
     render(courses)
 })
 
-render(courses)
+
 
 // Ползунок
 let slider = document.getElementById("myRange");
@@ -427,7 +432,6 @@ allCourse.addEventListener('click', function() {
     sportCourse.classList.remove('blue-button')
     eatingBehaviorCourse.classList.remove('blue-button')
     beautyCourse.classList.remove('blue-button')
-    newCourses = newCourses.concat(result)
 })
 nutritionCourse.addEventListener('click', function() {
     let result = courses.filter(item => {return item.type === 'nutrition'});
@@ -437,7 +441,9 @@ nutritionCourse.addEventListener('click', function() {
     sportCourse.classList.remove('blue-button')
     eatingBehaviorCourse.classList.remove('blue-button')
     beautyCourse.classList.remove('blue-button')
-    newCourses = newCourses.concat(result)
+    console.log(result)
+    neNutrition = neNutrition.concat(result)
+    console.log(neNutrition)
 })
 sportCourse.addEventListener('click', function() {
     let result = courses.filter(item => {return item.type === 'sport'});
@@ -447,7 +453,7 @@ sportCourse.addEventListener('click', function() {
     sportCourse.classList.add('blue-button')
     eatingBehaviorCourse.classList.remove('blue-button')
     beautyCourse.classList.remove('blue-button')
-    newCourses = newCourses.concat(result)
+    newSport = newSport.concat(result)
 })
 eatingBehaviorCourse.addEventListener('click', function() {
     let result = courses.filter(item => {return item.type === 'eatingBehavior'});
@@ -457,7 +463,7 @@ eatingBehaviorCourse.addEventListener('click', function() {
     sportCourse.classList.remove('blue-button')
     eatingBehaviorCourse.classList.add('blue-button')
     beautyCourse.classList.remove('blue-button')
-    newCourses = newCourses.concat(result)
+    newEatingBehavior = newEatingBehavior.concat(result)
 })
 beautyCourse.addEventListener('click', function() {
     let result = courses.filter(item => {return item.type === 'beauty'});
@@ -467,11 +473,8 @@ beautyCourse.addEventListener('click', function() {
     sportCourse.classList.remove('blue-button')
     eatingBehaviorCourse.classList.remove('blue-button')
     beautyCourse.classList.add('blue-button')
-    newCourses = newCourses.concat(result)
+    newBeauty = newBeauty.concat(result)
 })
-
-
-
 
 
 // Отрисовка курсов
@@ -525,10 +528,6 @@ function render(arr) {
             all[i].style.backgroundColor = '#8D50B0' 
         }
     }
+   
+    console.log('123213')
 }
-
-// export {newCourses}
-console.log(newCourses)
-
-
-

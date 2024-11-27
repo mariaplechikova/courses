@@ -3,8 +3,8 @@
   src: url("../fonts/din_pro.eot"); /* IE 9 Compatibility Mode */
   src: url("../fonts/din_pro.eot?#iefix") format("embedded-opentype"), url("../fonts/din_pro.woff2") format("woff2"), url("../fonts/din_pro.woff") format("woff"), url("../fonts/din_pro.ttf") format("truetype"), url("../fonts/din_pro.svg#din_pro") format("svg"); /* Chrome < 4, Legacy iOS */
 }
-html, body {
-  width: 100%;
+body {
+  width: 100vw;
   margin: 0px;
   padding: 0px;
   font-family: "DIN Pro";
@@ -12,7 +12,6 @@ html, body {
 }
 
 .header {
-  width: 100%;
   height: 131px;
   background-color: #0FD690;
 }
@@ -20,12 +19,8 @@ html, body {
 .footer {
   width: 100%;
   background-color: black;
+  color: white;
 }
-.footer__block {
-  display: flex;
-  justify-content: space-between;
-}
-
 a {
   text-decoration: none;
 }
@@ -33,26 +28,26 @@ a {
 .content {
   width: 100%;
   margin: 0px;
-  padding: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
   box-sizing: border-box;
 }
 .content__bread-crumbs {
   font-size: 16px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-top: 26px;
 }
 .content__title {
   font-size: 32px;
-  margin-bottom: 6px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-top: 6px;
+  font-weight: 700;
 }
 .content__directions {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-top: 32px;
   gap: 10px;
 }
 .content__directions__title {
@@ -76,13 +71,15 @@ a {
   border-radius: 6px;
   border: none;
   background-color: white;
-  margin: 17px auto 24px auto;
+  margin: 17px auto 0px auto;
+  font-weight: 500;
+  padding: 0px;
 }
 
 .form {
   display: none;
   position: absolute;
-  top: 505px;
+  top: 570px;
   left: calc(50% - 167px);
   z-index: 10;
   background-color: white;
@@ -93,18 +90,18 @@ a {
   box-sizing: border-box;
 }
 .form__radio {
-  margin: 5px;
-  display: flex;
-  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .form__p-cat {
   margin: 0px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 5px;
 }
 .form__p-duration {
   margin: 0px;
-  padding-top: 18px;
+  padding-top: 8px;
   padding-bottom: 18px;
 }
 .form__p-slide {
@@ -126,20 +123,22 @@ a {
   text-align: center;
   background-color: #1D7AD3;
   box-shadow: none;
-  margin-top: 47px;
+  margin-top: 37px;
   margin-bottom: 10px;
   font-size: 16px;
   color: white;
+  font-weight: 500;
 }
 .form__button-reset {
   width: 305px;
   height: 50px;
   border-radius: 4px;
-  border: 1ps solid black;
+  border: 1ps solid #3A3849;
   text-align: center;
   background-color: white;
   box-shadow: none;
   font-size: 16px;
+  font-weight: 500;
 }
 
 .form-black {
@@ -167,6 +166,7 @@ a {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 24px;
 }
 
 .courses {
@@ -176,13 +176,17 @@ a {
 }
 .courses__block {
   width: 335px;
-  height: 572px;
+  min-height: 280px;
   border-radius: 20px;
   background-color: #FFFFFF;
   font-family: "DIN Pro";
   padding: 15px;
   box-sizing: border-box;
   position: relative;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .courses__block__category {
   display: flex;
@@ -203,15 +207,17 @@ a {
 .courses__block__title {
   margin-top: 20px;
   font-size: 20px;
+  font-weight: 700;
 }
 .courses__block__text {
   font-size: 16px;
   margin-top: 13px;
+  font-weight: 400;
 }
 .courses__block__p {
   font-size: 14px;
   display: flex;
-  margin: 5px 0;
+  margin-top: 10px;
 }
 .courses__block__p div:first-of-type {
   color: #3EAEBA;
@@ -220,12 +226,11 @@ a {
 .courses__block__duration {
   font-size: 14px;
   font-weight: 400;
-  margin: 8px;
-  position: absolute;
+  margin-top: 15px;
   bottom: 100px;
 }
 .courses__block__duration span {
-  font-weight: bold;
+  font-weight: 500;
 }
 .courses__block__button {
   width: 305px;
@@ -238,8 +243,11 @@ a {
   border-radius: 4px;
 }
 .courses__block form {
-  position: absolute;
-  bottom: 20px;
+  margin-top: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .blue-button {
@@ -255,12 +263,11 @@ a {
   }
   .content__title {
     font-size: 40px;
-    margin-bottom: 6px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-top: 26px;
   }
   .content__directions {
     align-items: center;
+    margin-top: 39px;
   }
   .content__directions__title {
     flex-basis: 168px;
@@ -281,64 +288,64 @@ a {
     margin-right: 27px;
   }
   .form__radio {
-    margin: 5px;
+    margin-top: 10px;
     display: flex;
-    gap: 10px;
+  }
+  .form__radio label {
+    padding-left: 10px;
   }
   .form__p-cat {
     margin: 0px;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-bottom: 10px;
   }
   .form__p-duration {
     margin: 0px;
     padding-top: 18px;
-    padding-bottom: 18px;
+    padding-bottom: 17px;
   }
   .form__p-slide {
     width: 100%;
     text-align: center;
-    margin: 0px;
-    padding-top: 17px;
+    margin-top: 0px;
   }
   .form__p-result {
-    margin: 0px;
-    padding-top: 21px;
-    padding-bottom: 10px;
+    padding-top: 0px;
+    margin-top: 15px;
   }
   .form__button-apply {
-    width: 280px;
+    width: 269px;
     height: 50px;
     border-radius: 4px;
     border: none;
     text-align: center;
     background-color: #1D7AD3;
     box-shadow: none;
-    margin-top: 47px;
-    margin-bottom: 10px;
+    margin-top: 20px;
     color: white;
   }
   .form__button-reset {
-    width: 280px;
+    width: 269px;
     height: 50px;
     border-radius: 4px;
     border: 1ps solid black;
     text-align: center;
     background-color: white;
     box-shadow: none;
+    margin-top: 5px;
   }
   .category {
     width: 1441px;
-    display: flex;
     align-items: start;
     margin-top: 52px;
+    justify-content: center;
   }
   .courses {
     width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    justify-content: center;
+    align-items: start;
     gap: 5px;
   }
   .courses__block {
@@ -369,7 +376,6 @@ a {
   .courses__block__title {
     margin-top: 20px;
     font-size: 22px;
-    font-weight: bold;
     line-height: 24.3px;
   }
   .courses__block__text {
@@ -382,26 +388,16 @@ a {
     margin: 10px 0;
     line-height: 20.8px;
   }
-  .courses__block__p div:first-of-type {
-    color: #3EAEBA;
-    margin-right: 10px;
-  }
   .courses__block__duration {
     font-size: 16px;
     font-weight: 400;
     margin: 8px;
-  }
-  .courses__block__duration span {
-    font-weight: bold;
+    position: absolute;
+    bottom: 100px;
   }
   .courses__block__button {
     height: 60px;
-    background-color: #1D7AD3;
-    color: white;
-    text-align: center;
-    border: none;
     font-size: 18px;
-    border-radius: 4px;
   }
   .courses__block form {
     position: absolute;
@@ -410,5 +406,11 @@ a {
   .slider {
     width: 260px;
     height: 2px;
+  }
+  .footer__block {
+    width: 1441px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=main.css.map */
