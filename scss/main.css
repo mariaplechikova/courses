@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "DIN Pro";
   src: url("../fonts/din_pro.eot"); /* IE 9 Compatibility Mode */
@@ -21,8 +22,48 @@ body {
   background-color: black;
   color: white;
 }
+
 a {
   text-decoration: none;
+}
+
+.radio-style {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid #1D7AD3;
+  position: relative;
+  padding-left: 0px;
+}
+.radio-style p {
+  position: absolute;
+  width: 250px;
+  top: -18px;
+  left: 30px;
+}
+.radio-style::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%; /* Сохраняем круглую форму. */
+  background: #1D7AD3; /* Задаем цвет для отображения активной кнопки. */
+  opacity: 0; /* Сначала скрываем кнопку. */
+  transition: opacity 0.3s; /* Устанавливаем плавное изменение непрозрачности. */
+}
+
+#radio_dop:checked + .radio-style::before,
+#radio_qualifications:checked + .radio-style::before,
+#radio_training:checked + .radio-style::before,
+#radio_certificate:checked + .radio-style::before,
+#radio_diplom:checked + .radio-style::before,
+#radio_card:checked + .radio-style::before {
+  opacity: 1;
 }
 
 .content {
@@ -75,6 +116,9 @@ a {
   font-weight: 500;
   padding: 0px;
 }
+.content__filtr-button:hover {
+  cursor: pointer;
+}
 
 .form {
   display: none;
@@ -90,8 +134,15 @@ a {
   box-sizing: border-box;
 }
 .form__radio {
+  width: 100%;
   margin-top: 10px;
-  margin-bottom: 10px;
+}
+.form__radio-first {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.form__radio-first p {
+  top: -28px;
 }
 .form__p-cat {
   margin: 0px;
@@ -101,8 +152,8 @@ a {
 }
 .form__p-duration {
   margin: 0px;
-  padding-top: 8px;
-  padding-bottom: 18px;
+  padding-top: 12px;
+  padding-bottom: 14px;
 }
 .form__p-slide {
   width: 100%;
@@ -123,11 +174,14 @@ a {
   text-align: center;
   background-color: #1D7AD3;
   box-shadow: none;
-  margin-top: 37px;
+  margin-top: 25px;
   margin-bottom: 10px;
   font-size: 16px;
   color: white;
   font-weight: 500;
+}
+.form__button-apply:hover {
+  cursor: pointer;
 }
 .form__button-reset {
   width: 305px;
@@ -139,6 +193,34 @@ a {
   box-shadow: none;
   font-size: 16px;
   font-weight: 500;
+}
+.form__button-reset:hover {
+  cursor: pointer;
+}
+.form__slidecontainer {
+  width: 100%;
+  position: relative;
+}
+.form__slidecontainer__div {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #1D7AD3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  position: absolute;
+  top: 6px;
+}
+.form__slidecontainer__div div {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #1D7AD3;
+}
+.form__slidecontainer__static {
+  left: 0px;
 }
 
 .form-black {
@@ -153,13 +235,34 @@ a {
   z-index: 5;
 }
 
-.slidecontainer {
-  width: 100%;
-}
-
 .slider {
   width: 305px;
   height: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background: linear-gradient(to right, #1D7AD3 100%, #c6dbf0 0%);
+  z-index: 6;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 8px;
+  height: 8px;
+  background: #1D7AD3;
+  outline: 1px solid #1D7AD3;
+  outline-offset: 4px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider::-moz-range-thumb {
+  width: 8px;
+  height: 8px;
+  background: #1D7AD3;
+  outline: 1px solid #1D7AD3;
+  outline-offset: 4px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .category {
@@ -172,7 +275,8 @@ a {
 .courses {
   display: flex;
   gap: 15px;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .courses__block {
   width: 335px;
@@ -226,11 +330,15 @@ a {
 .courses__block__duration {
   font-size: 14px;
   font-weight: 400;
-  margin-top: 15px;
-  bottom: 100px;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: end;
 }
-.courses__block__duration span {
+.courses__block__duration__span {
   font-weight: 500;
+  margin-left: 10px;
 }
 .courses__block__button {
   width: 305px;
@@ -242,12 +350,11 @@ a {
   font-size: 18px;
   border-radius: 4px;
 }
+.courses__block__button:hover {
+  cursor: pointer;
+}
 .courses__block form {
   margin-top: 15px;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
 .blue-button {
@@ -277,22 +384,21 @@ a {
   }
   .form {
     width: 293px;
-    height: 612px;
+    height: 645px;
     padding: 15px 12px 35px 12px;
     display: block;
     position: relative;
     top: auto;
     left: auto;
     font-size: 16px;
-    box-sizing: border-box;
     margin-right: 27px;
   }
   .form__radio {
     margin-top: 10px;
-    display: flex;
   }
-  .form__radio label {
-    padding-left: 10px;
+  .form__radio-first {
+    margin-top: 22px;
+    margin-bottom: 22px;
   }
   .form__p-cat {
     margin: 0px;
@@ -300,38 +406,26 @@ a {
     padding-bottom: 10px;
   }
   .form__p-duration {
-    margin: 0px;
     padding-top: 18px;
     padding-bottom: 17px;
   }
   .form__p-slide {
-    width: 100%;
-    text-align: center;
     margin-top: 0px;
   }
   .form__p-result {
+    padding-bottom: 0px;
     padding-top: 0px;
-    margin-top: 15px;
+    margin-top: 40px;
+    margin-bottom: 15px;
   }
   .form__button-apply {
     width: 269px;
     height: 50px;
-    border-radius: 4px;
-    border: none;
-    text-align: center;
-    background-color: #1D7AD3;
-    box-shadow: none;
     margin-top: 20px;
-    color: white;
   }
   .form__button-reset {
     width: 269px;
     height: 50px;
-    border-radius: 4px;
-    border: 1ps solid black;
-    text-align: center;
-    background-color: white;
-    box-shadow: none;
     margin-top: 5px;
   }
   .category {
@@ -350,7 +444,7 @@ a {
   }
   .courses__block {
     width: 357px;
-    height: 572px;
+    box-sizing: border-box;
     padding: 20px;
     margin-top: 0px;
     margin-left: 0px;
@@ -385,23 +479,19 @@ a {
   .courses__block__p {
     font-size: 16px;
     display: flex;
-    margin: 10px 0;
+    margin: 7 0;
     line-height: 20.8px;
   }
   .courses__block__duration {
     font-size: 16px;
     font-weight: 400;
-    margin: 8px;
-    position: absolute;
-    bottom: 100px;
+  }
+  .courses__block__duration__span {
+    font-weight: 500;
   }
   .courses__block__button {
     height: 60px;
     font-size: 18px;
-  }
-  .courses__block form {
-    position: absolute;
-    bottom: 20px;
   }
   .slider {
     width: 260px;

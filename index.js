@@ -6,17 +6,17 @@ const courses = [
         'Синтез генетики, диетологии и биохимии для предотвращения и лечения заболеваний',
         'Юридические нюансы деятельности нутрициолога'],
         url: 'https://lp.updn.info/molecule_5p?utm_source=soc&utm_medium=seo',
-        category: 'dop',
+        category: 'dop', //Дополнительное профессиональное образование
         categoryCourse: 'Кафедра',
         categoryColor: '#8D50B0',
         duration: '6 месяцев',
         days: 182,
-        result: 'diplom',
+        result: 'diplom', //С получением сертификата
         categoryResalt: 'Диплом',
         type: 'nutrition',
         diplom: true,
         department: true,
-
+        divHight: '572px'
     },
     
     {
@@ -26,14 +26,15 @@ const courses = [
          'Научитесь выявлять расстройства пищевого поведения',
          'Овладеете знаниями по лабораторной диагностике'],
         url: 'https://lp.updn.info/nutritionology_seo?utm_source=soc&utm_medium=seo',
-        category: 'dop',
+        category: 'dop', //Дополнительное профессиональное образование
         categoryCourse: 'Кафедра',
         categoryColor: '#8D50B0',
         duration: '6 месяцев',
         days: 182,
-        result: 'diplom',
+        result: 'diplom', //С получением сертификата
         categoryResalt: 'Диплом',
-        type: 'nutrition'
+        type: 'nutrition',
+        divHight: '572px'
     },
     
     {
@@ -44,14 +45,15 @@ const courses = [
          'Здоровый образ жизни: от питания до физической активности',
          'Нутрицевтика: ключевые модули для здоровья человека'],
         url: 'https://xn--j1amdg6b.xn----7sbhdegumjf0agbb9c1e.xn--p1ai/zayavka_kouch_seo',
-        category: 'dop',
+        category: 'dop', //Дополнительное профессиональное образование
         categoryCourse: 'Кафедра',
         categoryColor: '#8D50B0',
         duration: '6 месяцев',
         days: 182,
-        result: 'diplom',
+        result: 'diplom', //С получением диплома
         categoryResalt: 'Диплом',
-        type: 'nutrition'
+        type: 'nutrition',
+        divHight: '572px'
     },
     
     {
@@ -61,14 +63,15 @@ const courses = [
          'Недостатки и противопоказания белково-углеводного чередования',
          'Разрешенные и запрещенные продукты на белково-углеводном чередовании'],
         url: 'https://lp.updn.info/sportspec',
-        category: 'qualifications',
+        category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
         categoryColor: '#4F6FC5',
         duration: '6 недель',
         days: 42,
-        result: 'certificate',
+        result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
-        type: 'sport'
+        type: 'sport',
+        divHight: '438px'
     },
     
     {
@@ -78,14 +81,15 @@ const courses = [
          'Спортивные добавки',
          'Кетодиета, основы'],
         url: 'https://lp.updn.info/sportspec',
-        category: 'qualifications',
+        category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
         categoryColor: '#4F6FC5',
         duration: '6 недель',
         days: 42,
-        result: 'certificate',
+        result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
-        type: 'sport'
+        type: 'sport',
+        divHight: '438px'
     },
     
     {
@@ -95,14 +99,15 @@ const courses = [
          'Условия набора мышечной массы',
          'Спортивные добавки'],
         url: 'https://lp.updn.info/sportspec',
-        category: 'qualifications',
+        category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
         categoryColor: '#4F6FC5',
         duration: '6 недель',
         days: 42,
-        result: 'certificate',
+        result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
-        type: 'sport'
+        type: 'sport',
+        divHight: '438px'
     },
     
     {
@@ -110,14 +115,15 @@ const courses = [
         text: 'Освойте эффективные инструменты для обретения идеальной фигуры вами и вашими клиентами через проработку истинных психологических причин лишнего веса',
         p: [],
         url: 'https://updn.online/psychologist-consultant',
-        category: 'dop',
+        category: 'dop', //Дополнительное профессиональное образование
         categoryCourse: 'Кафедра',
         categoryColor: '#8D50B0',
         duration: '6 недель',
         days: 42,
-        result: 'diplom',
+        result: 'diplom', //С получением диплома
         categoryResalt: 'Диплом',
-        type: 'eatingBehavior'
+        type: 'eatingBehavior',
+        divHight: '426px'
     },
     
     {
@@ -125,14 +131,15 @@ const courses = [
         text: 'Психолог-консультант — человек, который имеет знания в области нутрициологии и психологии и может оказать качественную поддержку своим подопечным.',
         p: [],
         url: 'https://updn.pro/kurs/psihologiya-pishhevogo-povedeniya/',
-        category: 'qualifications',
+        category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
         categoryColor: '#4F6FC5',
         duration: '6 недель',
         days: 42,
-        result: 'certificate',
+        result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
-        type: 'eatingBehavior'
+        type: 'eatingBehavior',
+        divHight: '426px'
     },
     
     {
@@ -140,14 +147,16 @@ const courses = [
         text: '',
         p: [],
         url: 'https://updn.online/5p_new?utm_source=soc&utm_medium=seo',
-        category: 'qualifications',
+        category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
         categoryColor: '#4F6FC5',
         duration: '6 месяцев',
         days: 182,
-        result: 'certificate',
+        result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
-        type: 'nutrition'
+        type: 'nutrition',
+        divHight: '301px',
+        divHight: '352px'
     },
     
     {
@@ -155,14 +164,15 @@ const courses = [
         text: '',
         p: [],
         url: 'https://xn--j1amdg6b.xn----7sbhdegumjf0agbb9c1e.xn--p1ai/zayavka_kouch_seo',
-        category: 'qualifications',
+        category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
         categoryColor: '#4F6FC5',
         duration: '6 месяцев',
         days: 182,
-        result: 'certificate',
+        result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
-        type: 'nutrition'
+        type: 'nutrition',
+        divHight: '352px'
     },
     
     {
@@ -170,14 +180,15 @@ const courses = [
         text: '',
         p: [],
         url: 'https://xn--j1amdg6b.xn----7sbhdegumjf0agbb9c1e.xn--p1ai/zayavka_kouch_seo',
-        category: 'qualifications',
+        category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
         categoryColor: '#4F6FC5',
         duration: '6 месяцев',
         days: 182,
-        result: 'certificate',
+        result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
-        type: 'nutrition'
+        type: 'nutrition',
+        divHight: '301px'
     },
     
     {
@@ -185,14 +196,15 @@ const courses = [
         text: '',
         p: [],
         url: 'https://xn--j1amdg6b.xn----7sbhdegumjf0agbb9c1e.xn--p1ai/zayavka_kouch_seo',
-        category: 'qualifications',
+        category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
         categoryColor: '#4F6FC5',
         duration: '6 месяцев',
         days: 182,
-        result: 'certificate',
+        result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
-        type: 'nutrition'
+        type: 'nutrition',
+        divHight: '301px'
     },
     
     {
@@ -201,14 +213,15 @@ const courses = [
         p: ['Готовое решение в борьбе с дефицитами витаминов и минеральных веществ у взрослых и детей',
          'Избавление от таких состояний, как отсутствие энергии, лишний вес, ранние морщины, тусклые волосы, ощущение депрессии и других'],
         url: 'https://lid.nutritionist4day.ru/vmtransformation',
-        category: 'qualifications',
+        category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
         categoryColor: '#4F6FC5',
         duration: '6 недель',
         days: 42,
-        result: 'certificate',
+        result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
-        type: 'beauty'
+        type: 'beauty',
+        divHight: '469px'
     },
     
     {
@@ -217,14 +230,15 @@ const courses = [
         p: ['Профилактировать заболевания',
          'Решить уже существующие проблемы'],
         url: 'https://lid.nutritionist4day.ru/lymphatic-system',
-        category: 'training',
+        category: 'training', //Тренинг
         categoryCourse: 'Тренинг',
         categoryColor: '#FFA453',
         duration: '6 недель',
         days: 42,
-        result: 'certificate',
+        result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
-        type: 'beauty'
+        type: 'beauty',
+        divHight: '469px'
     },
     
     {
@@ -232,14 +246,15 @@ const courses = [
         text: 'Получите здоровое стройное тело с помощью питания и новый уровень качества жизни',
         p: [],
         url: 'https://lid.nutritionist4day.ru/mybody ',
-        category: 'training',
+        category: 'training', //Тренинг
         categoryCourse: 'Тренинг',
         categoryColor: '#FFA453',
         duration: '6 недель',
         days: 42,
-        result: 'certificate',
+        result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
-        type: 'beauty'
+        type: 'beauty',
+        divHight: '469px'
     },
     
     {
@@ -250,14 +265,15 @@ const courses = [
          'Комплексный подход, который игнорируют хирурги и косметологи',
          'До минус 15 лет без инъекций и подтяжек'],
         url: 'https://lp.updn.info/clas_antiage',
-        category: 'training',
+        category: 'training', //Тренинг
         categoryCourse: 'Тренинг',
         categoryColor: '#FFA453',
         duration: '6 недель',
         days: 42,
-        result: 'certificate',
+        result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
-        type: 'beauty'
+        type: 'beauty',
+        divHight: '519px'
     },
     
     {
@@ -265,14 +281,15 @@ const courses = [
         text: 'Избавьтесь от паразитов гарантированно, безопасно и без медикаментов',
         p: ['Надёжно защитите себя и близких от паразитов в будущем'],
         url: 'https://lid.nutritionist4day.ru/antiparasitic',
-        category: 'training',
+        category: 'training', //Тренинг
         categoryCourse: 'Тренинг',
         categoryColor: '#FFA453',
         duration: '6 недель',
         days: 42,
-        result: 'certificate',
+        result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
-        type: 'beauty'
+        type: 'beauty',
+        divHight: '519px'
     },
     
     {
@@ -283,14 +300,15 @@ const courses = [
          'Поймете откуда возникают различные патологии в кишечнике и узнаете современные методы их лечения',
          'Вы избавитесь от запоров'],
         url: 'https://updn.pro/kurs/onlajn-kurs-mikrobiota-kishechnika/ ',
-        category: 'training',
+        category: 'training', //Тренинг
         categoryCourse: 'Тренинг',
         categoryColor: '#FFA453',
         duration: '6 недель',
         days: 42,
-        result: 'certificate',
+        result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
-        type: 'beauty'
+        type: 'beauty',
+        divHight: '519px'
     },
     
     {
@@ -299,14 +317,15 @@ const courses = [
         p: ['Профилактируйте повышенный уровень холестерина и заболевания, к которым он приводит',
          'Научитесь снижать высокий холестерин и поддерживать его на оптимальном уровне'],
         url: 'https://lid.nutritionist4day.ru/cholesterol',
-        category: 'training',
+        category: 'training', //Тренинг
         categoryCourse: 'Тренинг',
         categoryColor: '#FFA453',
         duration: '6 недель',
         days: 42,
-        result: 'certificate',
+        result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
-        type: 'beauty'
+        type: 'beauty',
+        divHight: '565px'
     },
 
     {
@@ -316,14 +335,15 @@ const courses = [
          'Грамотно проведете диагностику причин абдоминального ожирения',
          'Подберете лабораторные анализы для диагностики'],
         url: 'https://updn.pro/kurs/kak-ubrat-zhivot/ ',
-        category: 'training',
+        category: 'training', //Тренинг
         categoryCourse: 'Тренинг',
         categoryColor: '#FFA453',
         duration: '6 недель',
         days: 42,
-        result: 'certificate',
+        result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
-        type: 'beauty'
+        type: 'beauty',
+        divHight: '565px'
     },
     
     {
@@ -333,14 +353,15 @@ const courses = [
          'Жить в стройном теле с удовольствием, не думая о шоколадке каждый час',
          'Не навредить организму при снижении веса — все только с пользой для здоровья!'],
         url: 'https://lid.nutritionist4day.ru/slender-bodyful',
-        category: 'training',
+        category: 'training', //Тренинг
         categoryCourse: 'Тренинг',
         categoryColor: '#FFA453',
         duration: '6 недель',
         days: 42,
-        result: 'certificate',
+        result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
-        type: 'beauty'
+        type: 'beauty',
+        divHight: '565px'
     },
     
 
@@ -357,11 +378,12 @@ const eatingBehaviorCourse = document.querySelector('.eating-behavior-course');
 const buttonApply = document.querySelector('.form__button-apply');
 const buttonReset = document.querySelector('.form__button-reset');
 const beautyCourse = document.querySelector('.beauty-course');
+const formBlack = document.querySelector('.form-black');
 const radiosCategory = document.querySelectorAll('input[name="category"]');
 const radiosResult = document.querySelectorAll('input[name="result"]');
-let onRadiosCategory
-let onRadiosResult
-let onDuration
+let onRadiosCategory = ''
+let onRadiosResult = ''
+let onSlider = 730
 let newCourses = []
 let neNutrition = []
 let newSport = []
@@ -375,7 +397,7 @@ formBlock.addEventListener('click', function() {
     for (let i=0; i<radiosCategory.length; i++) {
         if (radiosCategory[i].checked) {
             onRadiosCategory = radiosCategory[i].value
-            console.log(onRadiosCategory)
+            console.log('wtwrtr' + onRadiosCategory)
         }
     }
     for (let i=0; i<radiosResult.length; i++) {
@@ -384,15 +406,57 @@ formBlock.addEventListener('click', function() {
             console.log(onRadiosResult)
         }
     }
+
+    console.log('категория' + onRadiosCategory)
+    console.log('результат' + onRadiosResult)
+    console.log('длительность' + slider.value)
 })
 
 // Кнопка формы "Применить"
 buttonApply.addEventListener('click', function() {
-    console.log('работает')
-    let result = courses.filter(item => {return item.category == onRadiosCategory  || item.result == onRadiosResult || item.days <= onRadiosResult});
+    let result 
+
+    if (onRadiosResult == '') {
+        result = courses.filter(item => {return item.category == onRadiosCategory && item.days <= onSlider});
+    } 
+
+    if (onRadiosCategory == '') {
+        result = courses.filter(item => {return item.result == onRadiosResult && item.days <= onSlider});
+    } 
+
+    if (onRadiosResult != '' && onRadiosCategory != '') {
+        result = courses.filter(item => {return item.category == onRadiosCategory  && item.result == onRadiosResult && item.days <= onSlider});
+        } 
+        
+    if (onRadiosResult == '' && onRadiosCategory == '') {
+        result = courses.filter(item => {return item.days <= onSlider});
+        } 
+
+    console.log('qwe' + onRadiosCategory)
+    console.log('qwe' + onRadiosResult)
+    console.log('qwe' + slider.value)
+    console.log(result)
+
+    
+
     render(result)
     newCourses = newCourses.concat(result)
+    formBlack.style.display = 'none'
+    if(window.innerWidth <= 1440) {
+        form.style.display = 'none'
+        filtrButton.textContent = 'Показать фильтр'
+    } 
 })
+
+    // Ползунок
+    let slider = document.getElementById("myRange");
+    slider.oninput = function() {
+        onSlider = this.value;
+        let positionSlider = onSlider * 100 / 730
+        this.style.background = `linear-gradient(to right, #1D7AD3 ${positionSlider}%, #DBEDFF ${positionSlider}%)`;
+        console.log(onSlider)
+    }
+
 // Кнопка формы "Сбросить фильтр"
 buttonReset.addEventListener('click', function() {
     
@@ -402,22 +466,29 @@ buttonReset.addEventListener('click', function() {
     for (let i=0; i<radiosResult.length; i++) {
         radiosResult[i].checked = false
     }
-    slider.value = 365
+    onRadiosCategory = ''
+    onRadiosResult = ''
+    slider.value = 730
     render(courses)
 })
 
+window.addEventListener('resize', () => {
+    if(window.innerWidth > 1440) {
+        form.style.display = 'block'
+    } else {
+        form.style.display = 'none'
+    }
+  });
 
-
-// Ползунок
-let slider = document.getElementById("myRange");
-let output = document.getElementById("demo");
-slider.oninput = function() {
-  onRadiosResult = this.value;
-  console.log(onRadiosResult)
-}
-
-// Открытие-закрытие формы в мобильной версии
+// Кнопка "Показать фильтр"" в мобильной версии
 filtrButton.addEventListener('click', function() {
+    filtrButton.textContent = filtrButton.textContent === 'Скрыть фильтр' ? 'Показать фильтр': 'Скрыть фильтр';
+    form.style.display = form.style.display === 'block' ? 'none' : 'block';
+    formBlack.style.display = formBlack.style.display === 'block' ? 'none' : 'block';
+})
+
+// Клик на темном поле - закрытие формы
+formBlack.addEventListener('click', function() {
     filtrButton.textContent = filtrButton.textContent === 'Скрыть фильтр' ? 'Показать фильтр': 'Скрыть фильтр';
     form.style.display = form.style.display === 'block' ? 'none' : 'block';
     formBlack.style.display = formBlack.style.display === 'block' ? 'none' : 'block';
@@ -483,7 +554,7 @@ function render(arr) {
 
     for (let i=0; i<arr.length; i++) {
         let string1 = 
-        `<div class="courses__block">
+        `<div class="courses__block cours-hight${i}">
                     <div class="courses__block__category">
                         <div class="courses__block__category-first">${arr[i].categoryResalt}</div>
                         <div class="courses__block__category-second" color="${arr[i].categoryColor}">${arr[i].categoryCourse}</div>
@@ -499,10 +570,9 @@ function render(arr) {
             }
         }
         text(arrP)
-        
 
         let string3 = `<div class="courses__block__duration">
-                        Срок обучения: <span>${arr[i].duration}</span>
+                        Срок обучения: <span class="courses__block__duration__span">${arr[i].duration}</span>
                     </div>
                     
                     <form action=${arr[i].url}>
@@ -510,7 +580,8 @@ function render(arr) {
                     </form>
                 </div>`
     
-        blockCourses.innerHTML += string1 + string2 + string3  
+        blockCourses.innerHTML += string1 + string2 + string3
+        document.querySelector(`.cours-hight${i}`).style.height = `${arr[i].divHight}`;   
 
     }
 
