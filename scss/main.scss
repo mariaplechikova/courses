@@ -9,16 +9,110 @@
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     margin: 0px;
     padding: 0px;
     font-family: 'DIN Pro';
     background-color: rgb(248, 248, 248);
+    box-sizing: border-box;
 }
 
 .header {
+    padding: 0;
+    margin: 0;
+    width: 100%;
     height: 131px;
-    background-color: #0FD690;
+    .banner {
+        display: none;
+    }
+    .main {
+        padding: 0px 20px;
+        margin: 0;
+        max-height: 131px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        box-sizing: border-box;
+        &__mobil-menu {
+            padding: 0;
+            margin: 0;
+            margin-bottom: 10px;
+            width: 30px;
+            height: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &__item {
+                width: 30px;
+                height: 3px;
+                background-color: #3A3849;
+            }
+            .mobil-third {
+                width: 20px;
+            }
+        }
+        &__logo {
+            padding: 0;
+            margin: 0;
+        }
+        &__logo-img {
+            padding: 0;
+            margin: 0;
+            img {
+                width: 120px;
+            }
+        }
+        &__logo-title {
+            display: none;
+        }
+        &__content {
+            padding: 0;
+            margin: 0; 
+            display: flex;
+            justify-content: space-between;
+        }
+        &__content-text {
+            display: none;
+        }
+        &__content-button-t {
+            display: none;
+        }
+        &__content-watsapp {
+            img {
+                width: 40px;
+                height: auto;
+                margin: 0px;
+                padding: 0px;
+            }
+        }
+        &__content-phone {
+            display: none;
+        }
+        &__button {
+            display: none;
+        }
+        &__account {
+            width: 40px;
+            height: 40px;
+            margin: 0;
+            margin-left: 20px;
+            padding: 0;
+            border: none;
+            outline-offset: none;
+        }
+        &__account-img {
+            width: 40px;
+            height: auto;
+            margin: 0;
+            padding: 0;
+        }
+
+    }
+    .menu {
+        display: none;
+    }
+
 }
 
 .footer {
@@ -276,6 +370,7 @@ a {
     display: flex;
     justify-content: center;
     margin-top: 24px;
+    box-sizing: border-box;
 }
 
 .courses {
@@ -283,6 +378,7 @@ a {
     gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
+    box-sizing: border-box;
     &__block {
         width: 335px;
         min-height: 280px;
@@ -370,10 +466,206 @@ a {
 }
 
 @media (min-width: 1440px) {
+    .header {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 203px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        
+        .banner {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 100%;
+                height: auto;
+                max-width: 1701px;
+            }
+        }
+        .main {
+            width: 1441px;
+            padding-left: 0px;
+            padding-right: 0px;
+            height: 103px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            box-sizing: border-box;
+            &__mobil-menu {
+                display: none;
+            }
+            &__logo {
+                padding: 0;
+                margin: 0;
+                display: flex;
+                gap: 20px;
+                align-items: center;
+            }
+            &__logo-img {
+                padding: 0;
+                margin: 0;
+                img {
+                    width: 130px;
+                }
+            }
+            &__logo-title {
+                display: block;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16.2px;
+                width: 195px;
+            }
+            &__content {
+                padding: 0;
+                margin: 0; 
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 40px;
+            }
+            &__content-text {
+                display: block;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 18.9px;
+                width: 120px;
+            }
+            &__content-button-t {
+                display: block;
+                width: 238px;
+                height: 40px;
+                text-align: center;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 18.9px;
+                color: white;
+                background-color: #2AABEE;
+                text-transform: uppercase;
+                border-radius: 4px;
+                border: none;
+                box-sizing: border-box;
+                img {
+                    margin-left: 10px;
+                }
+            }
+            &__content-watsapp {
+                img {
+                    width: 40px;
+                    height: auto;
+                    margin: 0px;
+                    padding: 0px;
+                }
+            }
+            &__content-phone {
+                display: block;
+                .number {
+                    padding: 0;
+                    margin: 0;
+                    text-align: center;
+                    font-size: 22px;
+                    font-weight: 700;
+                    line-height: 29.7px;
+                }
+                .number-call {
+                    padding: 0;
+                    margin: 0;
+                    text-align: center;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 16.2px;
+                    height: 16px;
+                    box-sizing: border-box;
+                    display: flex;
+                    align-items: center;
+                    justify-content: left;
+                    p {
+                        padding: 0;
+                        margin: 0;
+                    }
+                    .number-call-green {
+                        display: inline-block;
+                        padding: 0;
+                        margin: 0;
+                        background-color: #30EB12;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        margin-right: 4px;
+                    }
+                }
+
+            }
+            &__button {
+                display: block;
+                width: 146px;
+                height: 40px;
+                padding: 0;
+                margin: 0;
+                border-radius: 4px;
+                border: 1px solid #3A3849;
+                text-align: center;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 18.9px;
+            }
+            &__account {
+                margin: 0;
+                margin-left: 20px;
+                padding: 0;
+                img {
+                    appearance: none;
+                    border: none;
+                    width: 40px;
+                    height: auto;
+                }
+            }
+    
+        }
+        .menu {
+            display: block;
+            width: 1441px;
+            padding: 0;
+            margin: 0;
+            margin-left: 0px;
+            margin-top: 25px;
+            box-sizing: border-box;
+            &__list {
+                width: 100%;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                background-color: #FFFFFF;
+                list-style: none;
+                padding-left: 0px;
+                margin-bottom: 0px;
+            }
+            &__list-item {
+                a {
+                    color: #3A3849;
+                    background-color: white;
+                }
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.84px;
+            }
+        }
+    
+    }
+
     .content {
-        width: 1451px;
+        width: 1441px;
         margin: auto;
-        box-sizing: content-box;
+        box-sizing: border-box;
+        padding-left: 0px;
+        padding-right: 0px;
         &__title {
             font-size: 40px;
             margin-top: 26px;
@@ -443,10 +735,13 @@ a {
         align-items: start;
         margin-top: 52px;
         justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .courses {
-        width: 1200px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
