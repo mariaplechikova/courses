@@ -734,7 +734,7 @@ a {
         width: 1441px;
         align-items: start;
         margin-top: 52px;
-        justify-content: center;
+        justify-content: space-between;
         padding-left: 0;
         padding-right: 0;
         margin-left: 0px;
@@ -746,7 +746,7 @@ a {
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
         align-items: start;
-        gap: 5px;
+        gap: 20px;
         &__block {
             width: 357px;
             box-sizing: border-box;
