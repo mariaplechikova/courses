@@ -8,7 +8,6 @@ const courses = [
         url: 'https://lp.updn.info/molecule_5p?utm_source=soc&utm_medium=seo',
         category: 'dop', //Дополнительное профессиональное образование
         categoryCourse: 'Кафедра',
-        categoryColor: '#8D50B0',
         duration: '6 месяцев',
         days: 182,
         result: 'diplom', //С получением сертификата
@@ -28,7 +27,6 @@ const courses = [
         url: 'https://lp.updn.info/nutritionology_seo?utm_source=soc&utm_medium=seo',
         category: 'dop', //Дополнительное профессиональное образование
         categoryCourse: 'Кафедра',
-        categoryColor: '#8D50B0',
         duration: '6 месяцев',
         days: 182,
         result: 'diplom', //С получением сертификата
@@ -47,7 +45,6 @@ const courses = [
         url: 'https://xn--j1amdg6b.xn----7sbhdegumjf0agbb9c1e.xn--p1ai/zayavka_kouch_seo',
         category: 'dop', //Дополнительное профессиональное образование
         categoryCourse: 'Кафедра',
-        categoryColor: '#8D50B0',
         duration: '6 месяцев',
         days: 182,
         result: 'diplom', //С получением диплома
@@ -65,7 +62,6 @@ const courses = [
         url: 'https://lp.updn.info/sportspec',
         category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
-        categoryColor: '#4F6FC5',
         duration: '6 недель',
         days: 42,
         result: 'certificate', //С получением сертификата
@@ -83,7 +79,6 @@ const courses = [
         url: 'https://lp.updn.info/sportspec',
         category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
-        categoryColor: '#4F6FC5',
         duration: '6 недель',
         days: 42,
         result: 'certificate', //С получением сертификата
@@ -101,7 +96,6 @@ const courses = [
         url: 'https://lp.updn.info/sportspec',
         category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
-        categoryColor: '#4F6FC5',
         duration: '6 недель',
         days: 42,
         result: 'certificate', //С получением сертификата
@@ -117,7 +111,6 @@ const courses = [
         url: 'https://updn.online/psychologist-consultant',
         category: 'dop', //Дополнительное профессиональное образование
         categoryCourse: 'Кафедра',
-        categoryColor: '#8D50B0',
         duration: '6 недель',
         days: 42,
         result: 'diplom', //С получением диплома
@@ -133,7 +126,6 @@ const courses = [
         url: 'https://updn.pro/kurs/psihologiya-pishhevogo-povedeniya/',
         category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
-        categoryColor: '#4F6FC5',
         duration: '6 недель',
         days: 42,
         result: 'certificate', //С получением сертификата
@@ -149,7 +141,6 @@ const courses = [
         url: 'https://updn.online/5p_new?utm_source=soc&utm_medium=seo',
         category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
-        categoryColor: '#4F6FC5',
         duration: '6 месяцев',
         days: 182,
         result: 'certificate', //С получением сертификата
@@ -166,7 +157,6 @@ const courses = [
         url: 'https://xn--j1amdg6b.xn----7sbhdegumjf0agbb9c1e.xn--p1ai/zayavka_kouch_seo',
         category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
-        categoryColor: '#4F6FC5',
         duration: '6 месяцев',
         days: 182,
         result: 'certificate', //С получением сертификата
@@ -182,7 +172,6 @@ const courses = [
         url: 'https://xn--j1amdg6b.xn----7sbhdegumjf0agbb9c1e.xn--p1ai/zayavka_kouch_seo',
         category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
-        categoryColor: '#4F6FC5',
         duration: '6 месяцев',
         days: 182,
         result: 'certificate', //С получением сертификата
@@ -198,7 +187,6 @@ const courses = [
         url: 'https://xn--j1amdg6b.xn----7sbhdegumjf0agbb9c1e.xn--p1ai/zayavka_kouch_seo',
         category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
-        categoryColor: '#4F6FC5',
         duration: '6 месяцев',
         days: 182,
         result: 'certificate', //С получением сертификата
@@ -215,7 +203,6 @@ const courses = [
         url: 'https://lid.nutritionist4day.ru/vmtransformation',
         category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
-        categoryColor: '#4F6FC5',
         duration: '6 недель',
         days: 42,
         result: 'certificate', //С получением сертификата
@@ -232,7 +219,6 @@ const courses = [
         url: 'https://lid.nutritionist4day.ru/lymphatic-system',
         category: 'training', //Тренинг
         categoryCourse: 'Тренинг',
-        categoryColor: '#FFA453',
         duration: '6 недель',
         days: 42,
         result: 'certificate', //С получением сертификата
@@ -248,7 +234,6 @@ const courses = [
         url: 'https://lid.nutritionist4day.ru/mybody ',
         category: 'training', //Тренинг
         categoryCourse: 'Тренинг',
-        categoryColor: '#FFA453',
         duration: '6 недель',
         days: 42,
         result: 'certificate', //С получением сертификата
@@ -267,7 +252,6 @@ const courses = [
         url: 'https://lp.updn.info/clas_antiage',
         category: 'training', //Тренинг
         categoryCourse: 'Тренинг',
-        categoryColor: '#FFA453',
         duration: '6 недель',
         days: 42,
         result: 'certificate', //С получением сертификата
@@ -283,7 +267,6 @@ const courses = [
         url: 'https://lid.nutritionist4day.ru/antiparasitic',
         category: 'training', //Тренинг
         categoryCourse: 'Тренинг',
-        categoryColor: '#FFA453',
         duration: '6 недель',
         days: 42,
         result: 'certificate', //С получением сертификата
@@ -302,7 +285,6 @@ const courses = [
         url: 'https://updn.pro/kurs/onlajn-kurs-mikrobiota-kishechnika/ ',
         category: 'training', //Тренинг
         categoryCourse: 'Тренинг',
-        categoryColor: '#FFA453',
         duration: '6 недель',
         days: 42,
         result: 'certificate', //С получением сертификата
@@ -319,7 +301,6 @@ const courses = [
         url: 'https://lid.nutritionist4day.ru/cholesterol',
         category: 'training', //Тренинг
         categoryCourse: 'Тренинг',
-        categoryColor: '#FFA453',
         duration: '6 недель',
         days: 42,
         result: 'certificate', //С получением сертификата
@@ -337,7 +318,6 @@ const courses = [
         url: 'https://updn.pro/kurs/kak-ubrat-zhivot/ ',
         category: 'training', //Тренинг
         categoryCourse: 'Тренинг',
-        categoryColor: '#FFA453',
         duration: '6 недель',
         days: 42,
         result: 'certificate', //С получением сертификата
@@ -355,7 +335,6 @@ const courses = [
         url: 'https://lid.nutritionist4day.ru/slender-bodyful',
         category: 'training', //Тренинг
         categoryCourse: 'Тренинг',
-        categoryColor: '#FFA453',
         duration: '6 недель',
         days: 42,
         result: 'certificate', //С получением сертификата
@@ -557,7 +536,7 @@ function render(arr) {
         `<div class="courses__block cours-hight${i}">
                     <div class="courses__block__category">
                         <div class="courses__block__category-first">${arr[i].categoryResalt}</div>
-                        <div class="courses__block__category-second" color="${arr[i].categoryColor}">${arr[i].categoryCourse}</div>
+                        <div class="courses__block__category-second">${arr[i].categoryCourse}</div>
                     </div>
                     <div class="courses__block__title">${arr[i].name}</div>
                     <div class="courses__block__text">${arr[i].text}</div>`
