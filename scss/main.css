@@ -219,7 +219,7 @@ a {
   position: absolute;
   top: 570px;
   left: calc(50% - 167px);
-  z-index: 10;
+  z-index: 2;
   background-color: white;
   width: 335px;
   height: 587px;
@@ -308,15 +308,13 @@ a {
   background-color: white;
   position: absolute;
   top: 6px;
+  z-index: -1;
 }
 .form__slidecontainer__div div {
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background-color: #1D7AD3;
-}
-.form__slidecontainer__static {
-  left: 0px;
 }
 .form__slidecontainer .slider {
   margin-left: 5px;
@@ -327,7 +325,6 @@ a {
   -moz-appearance: none;
        appearance: none;
   background: linear-gradient(to right, #1D7AD3 100%, #c6dbf0 0%);
-  z-index: 6;
 }
 .form__slidecontainer .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -359,7 +356,7 @@ a {
   height: 100vh;
   background-color: #000000;
   opacity: 10%;
-  z-index: 5;
+  z-index: 1;
 }
 
 .category {

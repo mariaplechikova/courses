@@ -9,7 +9,7 @@ const courses = [
         category: 'dop', //Дополнительное профессиональное образование
         categoryCourse: 'Кафедра',
         duration: '6 месяцев',
-        days: 182,
+        days: 6,
         result: 'diplom', //С получением сертификата
         categoryResalt: 'Диплом',
         type: 'nutrition',
@@ -28,7 +28,7 @@ const courses = [
         category: 'dop', //Дополнительное профессиональное образование
         categoryCourse: 'Кафедра',
         duration: '6 месяцев',
-        days: 182,
+        days: 6,
         result: 'diplom', //С получением сертификата
         categoryResalt: 'Диплом',
         type: 'nutrition',
@@ -46,7 +46,7 @@ const courses = [
         category: 'dop', //Дополнительное профессиональное образование
         categoryCourse: 'Кафедра',
         duration: '6 месяцев',
-        days: 182,
+        days: 6,
         result: 'diplom', //С получением диплома
         categoryResalt: 'Диплом',
         type: 'nutrition',
@@ -63,7 +63,7 @@ const courses = [
         category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
         duration: '6 недель',
-        days: 42,
+        days: 1.38,
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'sport',
@@ -80,7 +80,7 @@ const courses = [
         category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
         duration: '6 недель',
-        days: 42,
+        days: 1.38,
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'sport',
@@ -97,7 +97,7 @@ const courses = [
         category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
         duration: '6 недель',
-        days: 42,
+        days: 1.38,
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'sport',
@@ -112,7 +112,7 @@ const courses = [
         category: 'dop', //Дополнительное профессиональное образование
         categoryCourse: 'Кафедра',
         duration: '6 недель',
-        days: 42,
+        days: 1.38,
         result: 'diplom', //С получением диплома
         categoryResalt: 'Диплом',
         type: 'eatingBehavior',
@@ -127,7 +127,7 @@ const courses = [
         category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
         duration: '6 недель',
-        days: 42,
+        days: 1.38,
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'eatingBehavior',
@@ -142,7 +142,7 @@ const courses = [
         category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
         duration: '6 месяцев',
-        days: 182,
+        days: 6,
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'nutrition',
@@ -158,7 +158,7 @@ const courses = [
         category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
         duration: '6 месяцев',
-        days: 182,
+        days: 6,
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'nutrition',
@@ -173,7 +173,7 @@ const courses = [
         category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
         duration: '6 месяцев',
-        days: 182,
+        days: 6,
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'nutrition',
@@ -188,7 +188,7 @@ const courses = [
         category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
         duration: '6 месяцев',
-        days: 182,
+        days: 6,
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'nutrition',
@@ -204,7 +204,7 @@ const courses = [
         category: 'qualifications', //Повышение квалификации
         categoryCourse: 'Курс',
         duration: '6 недель',
-        days: 42,
+        days: 1.38,
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'beauty',
@@ -220,7 +220,7 @@ const courses = [
         category: 'training', //Тренинг
         categoryCourse: 'Тренинг',
         duration: '6 недель',
-        days: 42,
+        days: 1.38,
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'beauty',
@@ -235,7 +235,7 @@ const courses = [
         category: 'training', //Тренинг
         categoryCourse: 'Тренинг',
         duration: '6 недель',
-        days: 42,
+        days: 1.38,
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'beauty',
@@ -253,7 +253,7 @@ const courses = [
         category: 'training', //Тренинг
         categoryCourse: 'Тренинг',
         duration: '6 недель',
-        days: 42,
+        days: 1.38,
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'beauty',
@@ -268,7 +268,7 @@ const courses = [
         category: 'training', //Тренинг
         categoryCourse: 'Тренинг',
         duration: '6 недель',
-        days: 42,
+        days: 1.38,
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'beauty',
@@ -286,7 +286,7 @@ const courses = [
         category: 'training', //Тренинг
         categoryCourse: 'Тренинг',
         duration: '6 недель',
-        days: 42,
+        days: 1.38,
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'beauty',
@@ -302,7 +302,7 @@ const courses = [
         category: 'training', //Тренинг
         categoryCourse: 'Тренинг',
         duration: '6 недель',
-        days: 42,
+        days: 1.38,
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'beauty',
@@ -319,7 +319,7 @@ const courses = [
         category: 'training', //Тренинг
         categoryCourse: 'Тренинг',
         duration: '6 недель',
-        days: 42,
+        days: 1.38,
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'beauty',
@@ -336,7 +336,7 @@ const courses = [
         category: 'training', //Тренинг
         categoryCourse: 'Тренинг',
         duration: '6 недель',
-        days: 42,
+        days: 1.38,
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'beauty',
@@ -429,9 +429,15 @@ buttonApply.addEventListener('click', function() {
 
     // Ползунок
     let slider = document.getElementById("myRange");
+    let output = document.getElementById("demo");
+    let month = document.getElementById("month");
+    output.innerHTML = slider.value;
+    month.innerHTML = 'месяцев';
     slider.oninput = function() {
         onSlider = this.value;
-        let positionSlider = onSlider * 100 / 730
+        output.innerHTML = this.value;
+        month.innerHTML = (onSlider%10 == 1) ? 'месяца' : 'месяцев';
+        let positionSlider = onSlider * 100 / 24;
         this.style.background = `linear-gradient(to right, #1D7AD3 ${positionSlider}%, #DBEDFF ${positionSlider}%)`;
         console.log(onSlider)
     }
