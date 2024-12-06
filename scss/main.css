@@ -227,6 +227,7 @@ a {
   padding: 0px 15px 18px 15px;
   box-sizing: border-box;
   color: #3A3849;
+  font-family: "DIN Pro";
 }
 .form__radio {
   width: 100%;
@@ -274,6 +275,7 @@ a {
   font-size: 16px;
   color: white;
   font-weight: 500;
+  font-family: "DIN Pro";
 }
 .form__button-apply:hover {
   cursor: pointer;
@@ -289,6 +291,7 @@ a {
   box-shadow: none;
   font-size: 16px;
   font-weight: 500;
+  font-family: "DIN Pro";
 }
 .form__button-reset:hover {
   cursor: pointer;
@@ -448,6 +451,7 @@ a {
   border: none;
   font-size: 18px;
   border-radius: 4px;
+  font-family: "DIN Pro";
 }
 .courses__block__button:hover {
   cursor: pointer;
