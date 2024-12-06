@@ -362,7 +362,7 @@ const radiosCategory = document.querySelectorAll('input[name="category"]');
 const radiosResult = document.querySelectorAll('input[name="result"]');
 let onRadiosCategory = ''
 let onRadiosResult = ''
-let onSlider = 730
+let onSlider = 24
 let newCourses = []
 let neNutrition = []
 let newSport = []
@@ -436,8 +436,8 @@ buttonApply.addEventListener('click', function() {
     slider.oninput = function() {
         onSlider = this.value;
         output.innerHTML = this.value;
-        month.innerHTML = (onSlider%10 == 1) ? 'месяца' : 'месяцев';
-        let positionSlider = onSlider * 100 / 24;
+        month.innerHTML = (onSlider == 1 || onSlider == 21) ? 'месяца' : 'месяцев';
+        let positionSlider = onSlider * 100 / 24 - 2;
         this.style.background = `linear-gradient(to right, #1D7AD3 ${positionSlider}%, #DBEDFF ${positionSlider}%)`;
         console.log(onSlider)
     }
@@ -453,7 +453,7 @@ buttonReset.addEventListener('click', function() {
     }
     onRadiosCategory = ''
     onRadiosResult = ''
-    slider.value = 730
+    slider.value = 24
     render(courses)
 })
 

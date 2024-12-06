@@ -321,7 +321,6 @@ a {
 }
 .form__slidecontainer .slider {
   margin-left: 5px;
-  margin-right: 5px;
   width: calc(100% - 10px);
   height: 2px;
   -webkit-appearance: none;
