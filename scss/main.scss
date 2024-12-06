@@ -432,8 +432,17 @@ a {
             margin-top: 10px;
         }
         &__p div:first-of-type {
-            color: #3EAEBA;
             margin-right: 10px;
+            display: flex;
+            align-items: center;
+            div {
+                margin: 0;
+                padding: 0;
+                width: 8px;
+                height: 8px;
+                background-color: #3EAEBA;
+                border-radius: 50%;
+            }
         }
         &__duration {
             font-size: 14px;
@@ -764,7 +773,7 @@ a {
             margin-top: 0px;
             margin-left: 0px;
             margin-right: 0px;
-            margin-bottom: 15px;
+            // margin-bottom: 15px;
             &__category {
                 display: flex;
                 gap: 10px;
@@ -784,11 +793,13 @@ a {
             &__title {
                 margin-top: 20px;
                 font-size: 22px;
-                line-height: 24.3px;
+                line-height: 28.6px;
             }
             &__text {
                 font-size: 18px;
                 margin-top: 13px;
+                line-height: 24.3px;
+                font-weight: 500;
             }
             &__p {
                 font-size: 16px; 

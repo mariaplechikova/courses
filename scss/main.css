@@ -424,8 +424,17 @@ a {
   margin-top: 10px;
 }
 .courses__block__p div:first-of-type {
-  color: #3EAEBA;
   margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.courses__block__p div:first-of-type div {
+  margin: 0;
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #3EAEBA;
+  border-radius: 50%;
 }
 .courses__block__duration {
   font-size: 14px;
@@ -745,7 +754,6 @@ a {
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    margin-bottom: 15px;
   }
   .courses__block__category {
     display: flex;
@@ -766,11 +774,13 @@ a {
   .courses__block__title {
     margin-top: 20px;
     font-size: 22px;
-    line-height: 24.3px;
+    line-height: 28.6px;
   }
   .courses__block__text {
     font-size: 18px;
     margin-top: 13px;
+    line-height: 24.3px;
+    font-weight: 500;
   }
   .courses__block__p {
     font-size: 16px;

@@ -147,7 +147,6 @@ const courses = [
         categoryResalt: 'Сертификат',
         type: 'nutrition',
         divHight: '301px',
-        divHight: '352px'
     },
     
     {
@@ -411,9 +410,9 @@ buttonApply.addEventListener('click', function() {
         result = courses.filter(item => {return item.days <= onSlider});
         } 
 
-    console.log('qwe' + onRadiosCategory)
-    console.log('qwe' + onRadiosResult)
-    console.log('qwe' + slider.value)
+    console.log(onRadiosCategory)
+    console.log(onRadiosResult)
+    console.log(slider.value)
     console.log(result)
 
     
@@ -422,6 +421,7 @@ buttonApply.addEventListener('click', function() {
     newCourses = newCourses.concat(result)
     formBlack.style.display = 'none'
     if(window.innerWidth <= 1440) {
+        formBlack.style.display = 'none'
         form.style.display = 'none'
         filtrButton.textContent = 'Показать фильтр'
     } 
@@ -454,14 +454,18 @@ buttonReset.addEventListener('click', function() {
     onRadiosCategory = ''
     onRadiosResult = ''
     slider.value = 24
+    slider.style.background = '#1D7AD3'
     render(courses)
 })
 
 window.addEventListener('resize', () => {
     if(window.innerWidth > 1440) {
         form.style.display = 'block'
+        formBlack.style.display = 'none'
     } else {
         form.style.display = 'none'
+        formBlack.style.display = 'none'
+        filtrButton.textContent = 'Показать фильтр'
     }
   });
 
@@ -551,7 +555,7 @@ function render(arr) {
         let arrP = arr[i].p
          function text(arr) {
             for (let i=0; i<arr.length; i++) {
-                string2 +=`<div class="courses__block__p"><div><img src="img/Ellipse 21.png"></div><div>${arr[i]}</div></div>`
+                string2 +=`<div class="courses__block__p"><div><div></div></div><div>${arr[i]}</div></div>`
             }
         }
         text(arrP)
