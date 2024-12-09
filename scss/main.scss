@@ -148,10 +148,10 @@ a {
         display: inline-block;
         width: 8px;
         height: 8px;
-        border-radius: 50%; /* Сохраняем круглую форму. */
-        background: #1D7AD3; /* Задаем цвет для отображения активной кнопки. */
-        opacity: 0; /* Сначала скрываем кнопку. */
-        transition: opacity 0.3s; /* Устанавливаем плавное изменение непрозрачности. */
+        border-radius: 50%;
+        background: #1D7AD3;
+        opacity: 0;
+        transition: opacity 0.3s;
     }
 }
   
@@ -166,29 +166,43 @@ a {
 
 .content {
     width: 100%;
-    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
+    .elem {
+        width: 100%;
+    }
+
     &__bread-crumbs {
         font-size: 16px;
         margin-top: 26px;
+        font-family: 'DIN Pro';
+        font-weight: 400;
+        text-align: left;
     }
     &__title {
         font-size: 32px;
         margin-top: 6px;
         font-weight: 700;
+        font-family: 'DIN Pro';
         color: #3A3849;
+        text-align: left;
     }
     &__directions {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        font-family: 'DIN Pro';
         margin-top: 32px;
         gap: 10px;
         color: #3A3849;
+        font-size: 16px;
+        font-weight: 400;
         &__title {
             flex-basis: 100%;
         }
@@ -210,11 +224,14 @@ a {
         height: 40px;
         text-align: center;
         border-radius: 6px;
-        border: none;
-        background-color: white;
-        margin: 17px auto 0px auto;
-        font-weight: 500;
+        border: 1px solid #E9E9E9;
+        background-color: #FFFFFF;
+        margin: 17px auto 0px 0px;
         padding: 0px;
+        font-size: 14px;
+        font-family: 'DIN Pro';
+        line-height: 20.3px;
+        font-weight: 400;
         color: #3A3849;
         &:hover { 
             cursor: pointer;
@@ -233,54 +250,74 @@ a {
     width: 335px;
     height: 587px;
     border-radius: 20px; 
-    padding: 0px 15px 18px 15px;
+    padding: 10px 15px 18px 15px;
     box-sizing: border-box;
     color: #3A3849;
     font-family: 'DIN Pro';
     &__radio {
         width: 100%;
+        margin: 0;
         margin-top: 10px;
+        padding: 0;
+        position: relative;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23.2px;
+        p {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            top: -2px;
+            left: 26px;
+        }
     }
     &__radio-first {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 25px;
+        margin-bottom: 25px;
         p {
-            top: -28px;
+            top: -15px;
         }
     }
     &__p-cat {
-        margin: 0px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        margin-top: 5px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
     }
     &__p-duration{
-        margin: 0px;
-        padding-top: 12px;
-        padding-bottom: 14px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 18px;
+        margin-bottom: 10px;
+        padding: 0;
         
     }
     &__p-slide {
         width: 100%;
         text-align: center;
-        margin: 0px;
-        padding-top: 17px;
+        margin: 0;
+        margin-top: 4px;
+        padding: 0;
+        font-size: 14px;
     }
     &__p-result {
-        margin: 0px;
-        padding-top: 21px;
-        padding-bottom: 10px;
+        margin: 0;
+        margin-top: 21px;
+        padding: 0;
     }
     &__button-apply {
-        width: 305px;
+        width: 100%;
         height: 50px;
         border-radius: 4px;
         border: none;
         text-align: center;
         background-color: #1D7AD3;
         box-shadow: none;
+        margin: 0;
+        padding: 0;
         margin-top: 25px;
-        margin-bottom: 10px;
         font-size: 16px;
         color: white;
         font-weight: 500;
@@ -290,11 +327,14 @@ a {
         } 
     }
     &__button-reset {
-        width: 305px;
+        width: 100%;
         height: 50px;
+        margin: 0;
+        margin-top: 10px;
+        padding: 0;
         border-radius: 4px;
         color: #3A3849;
-        border: 1ps solid #3A3849;
+        border: 1px solid #3A3849;
         text-align: center;
         background-color: white;
         box-shadow: none;
@@ -406,10 +446,11 @@ a {
             div {
                 border-radius: 80px;
                 height: 33px;
-                padding: 10px;
                 color: #FFFFFF;
                 font-size: 16px;
-                padding: 5px 20px;
+                line-height: 23.2px;
+                padding: 5px 15px;
+                font-weight: 500;
                 box-sizing: border-box;
             }
         }
@@ -420,19 +461,22 @@ a {
             margin-top: 20px;
             font-size: 20px;
             font-weight: 700;
+            line-height: 26px;
         }
         &__text {
             font-size: 16px;
-            margin-top: 13px;
-            font-weight: 400;
+            margin-top: 15px;
+            font-weight: 500;
+            line-height: 21.6px;
         }
         &__p {
             font-size: 14px; 
+            font-weight: 400;
             display: flex;
             margin-top: 10px;
         }
         &__p div:first-of-type {
-            margin-right: 10px;
+            margin-right: 14px;
             display: flex;
             align-items: center;
             div {
@@ -447,8 +491,10 @@ a {
         &__duration {
             font-size: 14px;
             font-weight: 400;
+            line-height: 18.2px;
             padding: 0;
             margin: 0;
+            margin-top: 15px;
             flex-grow: 1;
             display: flex;
             align-items: end;
@@ -467,8 +513,11 @@ a {
             text-align: center;
             border: none;
             font-size: 18px;
+            font-weight: 500;
+            line-height: 24.3px;
             border-radius: 4px;
             font-family: 'DIN Pro';
+            padding: 0;
             &:hover { 
                 cursor: pointer;
             } 
@@ -484,11 +533,18 @@ a {
     color: white;
 }
 
+@media (min-width: 980px) {
+    .courses {
+        justify-content: space-between;
+    }
+}
+
 @media (min-width: 1440px) {
     .header {
         padding: 0;
-        margin: 0;
+        margin: 0 auto;
         width: 100%;
+        max-width: 1441px;
         height: 203px;
         display: flex;
         justify-content: flex-end;
@@ -509,7 +565,7 @@ a {
             }
         }
         .main {
-            width: 1441px;
+            width: 100%;
             padding-left: 0px;
             padding-right: 0px;
             height: 103px;
@@ -649,7 +705,7 @@ a {
         }
         .menu {
             display: block;
-            width: 1441px;
+            width: 100%;
             padding: 0;
             margin: 0;
             margin-left: 0px;
@@ -680,18 +736,22 @@ a {
     }
 
     .content {
-        width: 1441px;
-        margin: auto;
+        margin: 0;
         box-sizing: border-box;
         padding-left: 0px;
         padding-right: 0px;
+        .elem {
+            width: 1441px;
+            box-sizing: border-box;
+        }
         &__title {
             font-size: 40px;
             margin-top: 26px;
         }
         &__directions {
             align-items: center;
-            margin-top: 39px;
+            margin-top: 31px;
+            gap: 15px;
             &__title {
                 flex-basis: 168px;
             }
@@ -702,7 +762,7 @@ a {
     }
 
     .form {
-        width: 293px;
+        width: 301px;
         height: 645px;
         padding: 15px 12px 35px 12px;
         display: block;
@@ -710,42 +770,34 @@ a {
         top: auto;
         left: auto;
         font-size: 16px;
-        margin-right: 27px;
         &__radio {
             margin-top: 10px;
         }
         &__radio-first {
-            margin-top: 22px;
-            margin-bottom: 22px;
+            margin-top: 25px;
+            margin-bottom: 25px;
         }
         &__p-cat {
-                    margin: 0px;
-                    padding-top: 5px;
-                    padding-bottom: 10px;
+            margin: 0;
+            padding: 0;
         }
         &__p-duration{
-            padding-top: 18px;
-            padding-bottom: 17px;
+            padding: 0;
+            margin-top: 15px 0 10px 0;
             
         }
         &__p-slide {
-            margin-top: 0px;
+            margin: 10px 0 0 0;
+            padding: 0;
         }
         &__p-result {
-            padding-bottom: 0px;
-            padding-top: 0px;
-            margin-top: 40px;
-            margin-bottom: 15px;
-        }
-        &__button-apply {
-            width: 269px;
-            height: 50px;
             margin-top: 20px;
         }
+        &__button-apply {
+            margin-top: 56px;
+        }
         &__button-reset {
-            width: 269px;
-            height: 50px;
-            margin-top: 5px;
+            margin-top: 10px;
         }  
     }
 
@@ -756,8 +808,6 @@ a {
         justify-content: space-between;
         padding-left: 0;
         padding-right: 0;
-        margin-left: 0px;
-        margin-right: 0px;
     }
 
     .courses {
@@ -767,22 +817,18 @@ a {
         align-items: start;
         gap: 20px;
         &__block {
-            width: 357px;
+            max-width: 357px;
             box-sizing: border-box;
             padding: 20px;
             margin-top: 0px;
             margin-left: 0px;
             margin-right: 0px;
-            // margin-bottom: 15px;
             &__category {
-                display: flex;
-                gap: 10px;
                 div {
-                    border-radius: 80px;
-                    height: 33px;
-                    padding: 10px;
+                    padding: 5px 20px;
                     color: #FFFFFF;
                     font-size: 16px;
+                    font-weight: 500;
                     padding: 5px 20px;
                     box-sizing: border-box;
                 }
@@ -793,26 +839,38 @@ a {
             &__title {
                 margin-top: 20px;
                 font-size: 22px;
+                font-weight: 700;
                 line-height: 28.6px;
+                width: 100%;
             }
             &__text {
                 font-size: 18px;
                 margin-top: 13px;
                 line-height: 24.3px;
                 font-weight: 500;
+                width: 100%;
             }
             &__p {
-                font-size: 16px; 
+                font-size: 16px;
+                font-weight: 400;
                 display: flex;
-                margin: 7 0;
+                margin-top: 10px;
                 line-height: 20.8px;
+                div:first-of-type {
+                    margin-right: 17px;
+                }
             }
             &__duration {
                 font-size: 16px;
                 font-weight: 400;
+                margin-top: 0;
                 &__span {
                     font-weight: 500;
                 }
+            }
+
+            form {
+                margin-top: 20px;
             }
             
             &__button {

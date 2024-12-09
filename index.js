@@ -375,19 +375,13 @@ formBlock.addEventListener('click', function() {
     for (let i=0; i<radiosCategory.length; i++) {
         if (radiosCategory[i].checked) {
             onRadiosCategory = radiosCategory[i].value
-            console.log('wtwrtr' + onRadiosCategory)
         }
     }
     for (let i=0; i<radiosResult.length; i++) {
         if (radiosResult[i].checked) {
             onRadiosResult = radiosResult[i].value
-            console.log(onRadiosResult)
         }
     }
-
-    console.log('категория' + onRadiosCategory)
-    console.log('результат' + onRadiosResult)
-    console.log('длительность' + slider.value)
 })
 
 // Кнопка формы "Применить"
@@ -410,12 +404,6 @@ buttonApply.addEventListener('click', function() {
         result = courses.filter(item => {return item.days <= onSlider});
         } 
 
-    console.log(onRadiosCategory)
-    console.log(onRadiosResult)
-    console.log(slider.value)
-    console.log(result)
-
-    
 
     render(result)
     newCourses = newCourses.concat(result)
@@ -439,7 +427,6 @@ buttonApply.addEventListener('click', function() {
         month.innerHTML = (onSlider == 1 || onSlider == 21) ? 'месяца' : 'месяцев';
         let positionSlider = onSlider * 100 / 24 - 2;
         this.style.background = `linear-gradient(to right, #1D7AD3 ${positionSlider}%, #DBEDFF ${positionSlider}%)`;
-        console.log(onSlider)
     }
 
 // Кнопка формы "Сбросить фильтр"
@@ -454,6 +441,8 @@ buttonReset.addEventListener('click', function() {
     onRadiosCategory = ''
     onRadiosResult = ''
     slider.value = 24
+    output.innerHTML = slider.value;
+    month.innerHTML = 'месяцев';
     slider.style.background = '#1D7AD3'
     render(courses)
 })
@@ -501,9 +490,7 @@ nutritionCourse.addEventListener('click', function() {
     sportCourse.classList.remove('blue-button')
     eatingBehaviorCourse.classList.remove('blue-button')
     beautyCourse.classList.remove('blue-button')
-    console.log(result)
     neNutrition = neNutrition.concat(result)
-    console.log(neNutrition)
 })
 sportCourse.addEventListener('click', function() {
     let result = courses.filter(item => {return item.type === 'sport'});
@@ -575,7 +562,6 @@ function render(arr) {
     }
 
     const all = document.querySelectorAll('.courses__block__category-second')
-    console.log(all)
 
     for (let i=0; i<all.length; i++) {
         if (all[i].innerText === 'Тренинг') {
@@ -588,6 +574,4 @@ function render(arr) {
             all[i].style.backgroundColor = '#8D50B0' 
         }
     }
-   
-    console.log('123213')
 }
