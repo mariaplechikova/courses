@@ -7,7 +7,7 @@ body {
   width: 100%;
   margin: 0px;
   padding: 0px;
-  font-family: "DIN Pro";
+  font-family: "DIN Pro", sans-serif;
   background-color: rgb(248, 248, 248);
   box-sizing: border-box;
 }
@@ -172,7 +172,7 @@ a {
 .content__bread-crumbs {
   font-size: 16px;
   margin-top: 26px;
-  font-family: "DIN Pro";
+  font-family: "DIN Pro", sans-serif;
   font-weight: 400;
   text-align: left;
 }
@@ -180,7 +180,7 @@ a {
   font-size: 32px;
   margin-top: 6px;
   font-weight: 700;
-  font-family: "DIN Pro";
+  font-family: "DIN Pro", sans-serif;
   color: #3A3849;
   text-align: left;
 }
@@ -188,7 +188,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  font-family: "DIN Pro";
+  font-family: "DIN Pro", sans-serif;
   margin-top: 32px;
   gap: 10px;
   color: #3A3849;
@@ -220,7 +220,7 @@ a {
   margin: 17px auto 0px 0px;
   padding: 0px;
   font-size: 14px;
-  font-family: "DIN Pro";
+  font-family: "DIN Pro", sans-serif;
   line-height: 20.3px;
   font-weight: 400;
   color: #3A3849;
@@ -242,7 +242,7 @@ a {
   padding: 10px 15px 18px 15px;
   box-sizing: border-box;
   color: #3A3849;
-  font-family: "DIN Pro";
+  font-family: "DIN Pro", sans-serif;
 }
 .form__radio {
   width: 100%;
@@ -310,7 +310,7 @@ a {
   font-size: 16px;
   color: white;
   font-weight: 500;
-  font-family: "DIN Pro";
+  font-family: "DIN Pro", sans-serif;
 }
 .form__button-apply:hover {
   cursor: pointer;
@@ -329,7 +329,7 @@ a {
   box-shadow: none;
   font-size: 16px;
   font-weight: 500;
-  font-family: "DIN Pro";
+  font-family: "DIN Pro", sans-serif;
 }
 .form__button-reset:hover {
   cursor: pointer;
@@ -422,7 +422,7 @@ a {
   box-sizing: border-box;
   border-radius: 20px;
   background-color: #FFFFFF;
-  font-family: "DIN Pro";
+  font-family: "DIN Pro", sans-serif;
   padding: 15px;
   position: relative;
   font-weight: 400;
@@ -456,7 +456,7 @@ a {
 .courses__block__text {
   font-size: 16px;
   margin-top: 15px;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 21.6px;
 }
 .courses__block__p {
@@ -490,7 +490,7 @@ a {
   align-items: end;
 }
 .courses__block__duration__span {
-  font-weight: 500;
+  font-weight: bold;
   margin-left: 10px;
 }
 .courses__block__button {
@@ -505,7 +505,7 @@ a {
   font-weight: 500;
   line-height: 24.3px;
   border-radius: 4px;
-  font-family: "DIN Pro";
+  font-family: "DIN Pro", sans-serif;
   padding: 0;
 }
 .courses__block__button:hover {
@@ -515,16 +515,17 @@ a {
   margin-top: 15px;
 }
 
+#psychologist-coach-weight-correction .courses__block__text,
+#psychology-eating-behavior .courses__block__text {
+  font-weight: 400;
+  font-size: 14px;
+}
+
 .blue-button {
   background-color: #1D7AD3;
   color: white;
 }
 
-@media (min-width: 980px) {
-  .courses {
-    justify-content: space-between;
-  }
-}
 @media (min-width: 1440px) {
   .header {
     padding: 0;
@@ -824,7 +825,6 @@ a {
     font-size: 18px;
     margin-top: 13px;
     line-height: 24.3px;
-    font-weight: 500;
     width: 100%;
   }
   .courses__block__p {
@@ -835,15 +835,12 @@ a {
     line-height: 20.8px;
   }
   .courses__block__p div:first-of-type {
-    margin-right: 17px;
+    margin-right: 10px;
   }
   .courses__block__duration {
     font-size: 16px;
     font-weight: 400;
     margin-top: 0;
-  }
-  .courses__block__duration__span {
-    font-weight: 500;
   }
   .courses__block form {
     margin-top: 20px;
@@ -851,6 +848,48 @@ a {
   .courses__block__button {
     height: 60px;
     font-size: 18px;
+  }
+  #molecular-5p-nutritionist, #full-course, #nutrition-coach {
+    height: 572px;
+  }
+  #protein-carbohydrate-alternation,
+  #drying,
+  #gain-muscle-mass {
+    height: 438px;
+  }
+  #psychologist-coach-weight-correction,
+  #psychology-eating-behavior {
+    height: 426px;
+  }
+  #business-5p,
+  #expert-laboratory-diagnostics,
+  #specialist-5P-nutritionology-protocols {
+    height: 301px;
+  }
+  #specialist-consulting-professional {
+    height: 352px;
+  }
+  #vitamin-mineral-transformation,
+  #all-about-lymphatic-system,
+  #nutritionist-for-family {
+    height: 469px;
+  }
+  #antiage,
+  #antiparasitic-program,
+  #healthy-intestines {
+    height: 519px;
+  }
+  #cholesterol-control,
+  #remove-belly,
+  #slim-body {
+    height: 565px;
+  }
+  #drying .courses__block__text, #gain-muscle-mass .courses__block__text {
+    margin-bottom: 29px;
+  }
+  #psychologist-coach-weight-correction .courses__block__text,
+  #psychology-eating-behavior .courses__block__text {
+    font-size: 16px;
   }
   .footer__block {
     width: 1441px;

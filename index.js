@@ -1,5 +1,6 @@
 const courses = [
     {
+        id: 'molecular-5p-nutritionist',
         name: 'Молекулярный 5П-нутрициолог',
         text: 'Инновационная профессия с присвоением новых квалификаций 5P-Health Tracker и молекулярный  5П-нутрициолог',
         p: ['Работа на молекулярном и генетическом уровнях с высокой точностью и гарантией результата',
@@ -15,10 +16,10 @@ const courses = [
         type: 'nutrition',
         diplom: true,
         department: true,
-        divHight: '572px'
     },
     
     {
+        id: 'full-course',
         name: '5П-Нутрициолог полный курс',
         text: 'Нутрициологическую поддержку при самых различных заболеваниях:',
         p: ['Разберетесь в нутрицевтиках',
@@ -32,10 +33,10 @@ const courses = [
         result: 'diplom', //С получением сертификата
         categoryResalt: 'Диплом',
         type: 'nutrition',
-        divHight: '572px'
     },
     
     {
+        id: 'nutrition-coach',
         name: 'Коуч по рациональному питанию и коррекции веса',
         text: 'Тактика ведения клиента в программах различной нутрицевтической направленности:',
         p: ['Комплексный подход к здоровья человека через питание',
@@ -50,10 +51,10 @@ const courses = [
         result: 'diplom', //С получением диплома
         categoryResalt: 'Диплом',
         type: 'nutrition',
-        divHight: '572px'
     },
     
     {
+        id: 'protein-carbohydrate-alternation',
         name: 'Белково углеводное чередование',
         text: '',
         p: ['Основы белково-углеводного чередования',
@@ -67,10 +68,10 @@ const courses = [
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'sport',
-        divHight: '438px'
     },
     
     {
+        id: 'drying',
         name: 'Сушка',
         text: '',
         p: ['Условия для сушки тела',
@@ -84,10 +85,10 @@ const courses = [
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'sport',
-        divHight: '438px'
     },
     
     {
+        id: 'gain-muscle-mass',
         name: 'Набор мышечной массы',
         text: '',
         p: ['Гипертрофия мышечных волокон',
@@ -101,10 +102,10 @@ const courses = [
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'sport',
-        divHight: '438px'
     },
     
     {
+        id: 'psychologist-coach-weight-correction',
         name: 'Психолог-коуч в сфере коррекции веса и пищевого поведения',
         text: 'Освойте эффективные инструменты для обретения идеальной фигуры вами и вашими клиентами через проработку истинных психологических причин лишнего веса',
         p: [],
@@ -116,10 +117,10 @@ const courses = [
         result: 'diplom', //С получением диплома
         categoryResalt: 'Диплом',
         type: 'eatingBehavior',
-        divHight: '426px'
     },
     
     {
+        id: 'psychology-eating-behavior',
         name: 'Психология пищевого поведения',
         text: 'Психолог-консультант — человек, который имеет знания в области нутрициологии и психологии и может оказать качественную поддержку своим подопечным.',
         p: [],
@@ -131,10 +132,10 @@ const courses = [
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'eatingBehavior',
-        divHight: '426px'
     },
     
     {
+        id: 'business-5p',
         name: 'Бизнес 5П',
         text: '',
         p: [],
@@ -146,10 +147,10 @@ const courses = [
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'nutrition',
-        divHight: '301px',
     },
     
     {
+        id: 'specialist-consulting-professional',
         name: 'Профессионал специализированного консультирования и подбора нутрицевтиков',
         text: '',
         p: [],
@@ -161,10 +162,10 @@ const courses = [
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'nutrition',
-        divHight: '352px'
     },
     
     {
+        id: 'expert-laboratory-diagnostics',
         name: 'Эксперт лабораторной диагностики для детей и взрослых',
         text: '',
         p: [],
@@ -176,10 +177,10 @@ const courses = [
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'nutrition',
-        divHight: '301px'
     },
     
     {
+        id: 'specialist-5P-nutritionology-protocols',
         name: 'Специалист 5П-Нутрициологии и протоколов питания',
         text: '',
         p: [],
@@ -191,10 +192,10 @@ const courses = [
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'nutrition',
-        divHight: '301px'
     },
     
     {
+        id: 'vitamin-mineral-transformation',
         name: 'Витаминно-минеральная трансформация',
         text: '',
         p: ['Готовое решение в борьбе с дефицитами витаминов и минеральных веществ у взрослых и детей',
@@ -207,10 +208,10 @@ const courses = [
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'beauty',
-        divHight: '469px'
     },
     
     {
+        id: 'all-about-lymphatic-system',
         name: 'Все о здоровье лимфатической системы',
         text: 'Поддержите свою лимфатическую систему, чтобы:',
         p: ['Профилактировать заболевания',
@@ -223,10 +224,10 @@ const courses = [
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'beauty',
-        divHight: '469px'
     },
     
     {
+        id: 'nutritionist-for-family',
         name: 'Диетолог для себя и своей семьи',
         text: 'Получите здоровое стройное тело с помощью питания и новый уровень качества жизни',
         p: [],
@@ -238,10 +239,10 @@ const courses = [
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'beauty',
-        divHight: '469px'
     },
     
     {
+        id: 'antiage',
         name: 'Антиэйдж',
         text: 'Возвращаем молодость на клеточном уровне:',
         p: ['Сэкономьте десятки тысяч на ненужных процедурах',
@@ -256,10 +257,10 @@ const courses = [
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'beauty',
-        divHight: '519px'
     },
     
     {
+        id: 'antiparasitic-program',
         name: 'Антипаразитарная программа',
         text: 'Избавьтесь от паразитов гарантированно, безопасно и без медикаментов',
         p: ['Надёжно защитите себя и близких от паразитов в будущем'],
@@ -271,10 +272,10 @@ const courses = [
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'beauty',
-        divHight: '519px'
     },
     
     {
+        id: 'healthy-intestines',
         name: 'Здоровый кишечник',
         text: 'Станьте востребованным специалистом в сфере диетологии!',
         p: ['Полное представление о строении, функциях, и работе кишечника',
@@ -289,10 +290,10 @@ const courses = [
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'beauty',
-        divHight: '519px'
     },
     
     {
+        id: 'cholesterol-control',
         name: 'Холестерин под контролем',
         text: '',
         p: ['Профилактируйте повышенный уровень холестерина и заболевания, к которым он приводит',
@@ -305,10 +306,10 @@ const courses = [
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'beauty',
-        divHight: '565px'
     },
 
     {
+        id: 'remove-belly',
         name: 'Как убрать живот',
         text: 'Эффективная и проверенная инструкция, которая приведёт вас к здоровому и подтянутому животу',
         p: ['Разберетесь какие причины лежат в истоках растущего живота',
@@ -322,10 +323,10 @@ const courses = [
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'beauty',
-        divHight: '565px'
     },
     
     {
+        id: 'slim-body',
         name: 'Ваше стройное тело от «А» до «Я»',
         text: 'Раскройте секреты своего организма с профессиональными нутрициологами и сбросьте до 10 кг уже через 30 дней!',
         p: ['Похудеть без диет, жёстких запретов и насилия над собой',
@@ -339,7 +340,6 @@ const courses = [
         result: 'certificate', //С получением сертификата
         categoryResalt: 'Сертификат',
         type: 'beauty',
-        divHight: '565px'
     },
     
 
@@ -363,10 +363,6 @@ let onRadiosCategory = ''
 let onRadiosResult = ''
 let onSlider = 24
 let newCourses = []
-let neNutrition = []
-let newSport = []
-let newEatingBehavior = []
-let newBeauty = []
 
 render(courses)
 
@@ -490,7 +486,6 @@ nutritionCourse.addEventListener('click', function() {
     sportCourse.classList.remove('blue-button')
     eatingBehaviorCourse.classList.remove('blue-button')
     beautyCourse.classList.remove('blue-button')
-    neNutrition = neNutrition.concat(result)
 })
 sportCourse.addEventListener('click', function() {
     let result = courses.filter(item => {return item.type === 'sport'});
@@ -500,7 +495,6 @@ sportCourse.addEventListener('click', function() {
     sportCourse.classList.add('blue-button')
     eatingBehaviorCourse.classList.remove('blue-button')
     beautyCourse.classList.remove('blue-button')
-    newSport = newSport.concat(result)
 })
 eatingBehaviorCourse.addEventListener('click', function() {
     let result = courses.filter(item => {return item.type === 'eatingBehavior'});
@@ -510,7 +504,6 @@ eatingBehaviorCourse.addEventListener('click', function() {
     sportCourse.classList.remove('blue-button')
     eatingBehaviorCourse.classList.add('blue-button')
     beautyCourse.classList.remove('blue-button')
-    newEatingBehavior = newEatingBehavior.concat(result)
 })
 beautyCourse.addEventListener('click', function() {
     let result = courses.filter(item => {return item.type === 'beauty'});
@@ -520,7 +513,6 @@ beautyCourse.addEventListener('click', function() {
     sportCourse.classList.remove('blue-button')
     eatingBehaviorCourse.classList.remove('blue-button')
     beautyCourse.classList.add('blue-button')
-    newBeauty = newBeauty.concat(result)
 })
 
 
@@ -530,7 +522,7 @@ function render(arr) {
 
     for (let i=0; i<arr.length; i++) {
         let string1 = 
-        `<div class="courses__block cours-hight${i}">
+        `<div class="courses__block cours-hight${i}" id="${arr[i].id}">
                     <div class="courses__block__category">
                         <div class="courses__block__category-first">${arr[i].categoryResalt}</div>
                         <div class="courses__block__category-second">${arr[i].categoryCourse}</div>
@@ -557,8 +549,6 @@ function render(arr) {
                 </div>`
     
         blockCourses.innerHTML += string1 + string2 + string3
-        document.querySelector(`.cours-hight${i}`).style.height = `${arr[i].divHight}`;   
-
     }
 
     const all = document.querySelectorAll('.courses__block__category-second')
