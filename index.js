@@ -361,7 +361,6 @@ const radiosCategory = document.querySelectorAll('input[name="category"]');
 const radiosResult = document.querySelectorAll('input[name="result"]');
 let onRadiosCategory = ''
 let onRadiosResult = ''
-let onSlider = 24
 let newCourses = []
 
 render(courses)
@@ -385,19 +384,19 @@ buttonApply.addEventListener('click', function() {
     let result 
 
     if (onRadiosResult == '') {
-        result = courses.filter(item => {return item.category == onRadiosCategory && item.days <= onSlider});
+        result = courses.filter(item => {return item.category == onRadiosCategory && item.days <= onSliderMax && item.days >= onSliderMin});
     } 
 
     if (onRadiosCategory == '') {
-        result = courses.filter(item => {return item.result == onRadiosResult && item.days <= onSlider});
+        result = courses.filter(item => {return item.result == onRadiosResult && item.days <= onSliderMax && item.days >= onSliderMin});
     } 
 
     if (onRadiosResult != '' && onRadiosCategory != '') {
-        result = courses.filter(item => {return item.category == onRadiosCategory  && item.result == onRadiosResult && item.days <= onSlider});
+        result = courses.filter(item => {return item.category == onRadiosCategory  && item.result == onRadiosResult && item.days <= onSliderMax && item.days >= onSliderMin});
         } 
         
     if (onRadiosResult == '' && onRadiosCategory == '') {
-        result = courses.filter(item => {return item.days <= onSlider});
+        result = courses.filter(item => {return item.days <= onSliderMax && item.days >= onSliderMin});
         } 
 
 
@@ -412,17 +411,52 @@ buttonApply.addEventListener('click', function() {
 })
 
     // Ползунок
-    let slider = document.getElementById("myRange");
-    let output = document.getElementById("demo");
-    let month = document.getElementById("month");
-    output.innerHTML = slider.value;
-    month.innerHTML = 'месяцев';
-    slider.oninput = function() {
-        onSlider = this.value;
-        output.innerHTML = this.value;
-        month.innerHTML = (onSlider == 1 || onSlider == 21) ? 'месяца' : 'месяцев';
-        let positionSlider = onSlider * 100 / 24 - 2;
-        this.style.background = `linear-gradient(to right, #1D7AD3 ${positionSlider}%, #DBEDFF ${positionSlider}%)`;
+    let sliderUpper = document.getElementById("myRange-upper");
+    let sliderLower = document.getElementById("myRange-lower");
+    let monthUpper = document.getElementById("month-upper");
+    let monthLower = document.getElementById("month-lower");
+    let outputMax = document.getElementById("max");
+    let outputMin = document.getElementById("min");
+    let slideTrack = document.querySelector(".slide-track");
+    let onSliderMax = 24;
+    let onSliderMin = 1;
+
+    sliderUpper.oninput = function() {
+        onSliderMax = this.value;
+        if (onSliderMax - onSliderMin >= 0) { 
+            outputMax.innerHTML = this.value;
+               
+        } else {
+            onSliderMax = onSliderMin
+            sliderUpper.value = onSliderMax
+        } 
+        
+        monthUpper.innerHTML = (onSliderMax == 1 || onSliderMax == 21) ? 'месяца' : 'месяцев';
+        colorSlideTrack(onSliderMax, onSliderMin) ;
+    }
+
+    sliderLower.oninput = function() {
+        onSliderMin = this.value;
+        if ( onSliderMax - onSliderMin >= 0) {
+            outputMin.innerHTML = this.value;   
+        } else {
+            onSliderMin = onSliderMax
+            sliderLower.value = onSliderMin
+        }
+
+        if (onSliderMin > 1) {
+            monthLower.innerHTML = (onSliderMin == 21) ? 'месяца' : 'месяцев';
+        } else {
+            monthLower.innerHTML = 'дня';
+        }
+
+        colorSlideTrack(onSliderMax, onSliderMin)
+    }
+
+    function colorSlideTrack(onSliderMax, onSliderMin) {
+        let positionSliderMax = onSliderMax * 100 / 24 - 2;
+        let positionSliderMin = onSliderMin * 100 / 24 - 2;
+        slideTrack.style.background = `linear-gradient(to right,  #DBEDFF ${positionSliderMin}%, #1D7AD3 ${positionSliderMin}%, #1D7AD3 ${positionSliderMax}%, #DBEDFF ${positionSliderMax}%)`;
     }
 
 // Кнопка формы "Сбросить фильтр"
@@ -436,10 +470,16 @@ buttonReset.addEventListener('click', function() {
     }
     onRadiosCategory = ''
     onRadiosResult = ''
-    slider.value = 24
-    output.innerHTML = slider.value;
-    month.innerHTML = 'месяцев';
-    slider.style.background = '#1D7AD3'
+    sliderUpper.value = 24
+    sliderLower.value = 1
+    onSliderMax = 24;
+    onSliderMin = 1
+    outputMax.innerHTML = sliderUpper.value;
+    outputMin.innerHTML = sliderLower.value;
+    monthUpper.innerHTML = 'месяцев';
+    monthLower.innerHTML = 'дня';
+    slideTrack.style.background = '#1D7AD3'
+    colorSlideTrack(onSliderMax, onSliderMin)
     render(courses)
 })
 

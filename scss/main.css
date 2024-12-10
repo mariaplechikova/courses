@@ -306,7 +306,7 @@ a {
   box-shadow: none;
   margin: 0;
   padding: 0;
-  margin-top: 25px;
+  margin-top: 30px;
   font-size: 16px;
   color: white;
   font-weight: 500;
@@ -335,36 +335,24 @@ a {
   cursor: pointer;
 }
 .form__slidecontainer {
-  width: 100%;
   position: relative;
-}
-.form__slidecontainer__div {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  border: 1px solid #1D7AD3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  position: absolute;
-  top: 6px;
-  z-index: -1;
-}
-.form__slidecontainer__div div {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: #1D7AD3;
+  margin: 0 5px;
+  padding: 0;
+  width: calc(100% - 10px);
+  height: 18px;
 }
 .form__slidecontainer .slider {
-  margin-left: 5px;
-  width: calc(100% - 10px);
-  height: 2px;
+  position: absolute;
+  left: 0px;
+  top: 9px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
-  background: linear-gradient(to right, #1D7AD3 100%, #c6dbf0 0%);
+  pointer-events: none;
 }
 .form__slidecontainer .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -376,6 +364,7 @@ a {
   outline-offset: 4px;
   border-radius: 50%;
   cursor: pointer;
+  pointer-events: auto;
 }
 .form__slidecontainer .slider::-moz-range-thumb {
   width: 8px;
@@ -385,6 +374,17 @@ a {
   outline-offset: 4px;
   border-radius: 50%;
   cursor: pointer;
+  pointer-events: auto;
+}
+.form__slidecontainer .slide-track {
+  position: absolute;
+  left: 0px;
+  top: 8px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 2px;
+  background: #1D7AD3;
 }
 
 .form-black {
@@ -765,7 +765,7 @@ a {
   }
   .form__p-duration {
     padding: 0;
-    margin-top: 15px 0 10px 0;
+    margin-top: 15px;
   }
   .form__p-slide {
     margin: 10px 0 0 0;
@@ -775,10 +775,16 @@ a {
     margin-top: 20px;
   }
   .form__button-apply {
-    margin-top: 56px;
+    width: calc(100% - 24px);
+    position: absolute;
+    bottom: 95px;
+    margin-top: 0px;
   }
   .form__button-reset {
-    margin-top: 10px;
+    width: calc(100% - 24px);
+    position: absolute;
+    bottom: 35px;
+    margin-top: 0px;
   }
   .category {
     width: 1441px;
