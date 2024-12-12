@@ -482,7 +482,7 @@ buttonReset.addEventListener('click', function() {
 })
 
 window.addEventListener('resize', () => {
-    if(window.innerWidth > 1440) {
+    if(window.innerWidth > 1340) {
         form.style.display = 'block'
         formBlack.style.display = 'none'
     } else {
@@ -560,7 +560,8 @@ function render(arr) {
 
     for (let i=0; i<arr.length; i++) {
         let string1 = 
-        `<div class="courses__block">
+        `
+        <div class="courses__block">
                     <div class="courses__block__category">
                         <div class="courses__block__category-first">${arr[i].categoryResalt}</div>
                         <div class="courses__block__category-second">${arr[i].categoryCourse}</div>
@@ -572,18 +573,27 @@ function render(arr) {
         let arrP = arr[i].p
          function text(arr) {
             for (let i=0; i<arr.length; i++) {
-                string2 +=`<div class="courses__block__p"><div><div></div></div><div>${arr[i]}</div></div>`
+                string2 +=`<div class="courses__block__p">
+                    
+                    <div class="courses__block__point">
+                        <div class="courses__block__point-g"></div>
+                    </div>
+
+                    <div>${arr[i]}</div>
+                </div>`
             }
         }
         text(arrP)
 
-        let string3 = `<div class="courses__block__duration">
+        let string3 = `<div class="courses__block__bottom">
+                    <div class="courses__block__duration">
                         Срок обучения: <span class="courses__block__duration__span">${arr[i].duration}</span>
                     </div>
                     
-                    <form action=${arr[i].url}>
+                    <form action=${arr[i].url} class="courses__block__form">
                         <button class="courses__block__button">Переход по ссылке</button>
                     </form>
+                </div>
                 </div>`
     
         blockCourses.innerHTML += string1 + string2 + string3

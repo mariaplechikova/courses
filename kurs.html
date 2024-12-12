@@ -9,7 +9,7 @@
 </head>
 <body>
     
-   <header class="header">
+   <!-- <header class="header">
     <div class="banner"><img src="./img/Frame 1.png"></div>
     <div class="main">
         <div class="main__mobil-menu">
@@ -62,11 +62,11 @@
         </ul>
     </nav>
         
-   </header>
+   </header> -->
 
    <div class="content">
         
-        <div class="form-black"></div>
+        <div class="form-course-black"></div>
         
         <div class="content__bread-crumbs">
             Главная / Курсы по нутрициологии
@@ -76,64 +76,64 @@
         
         <div class="content__directions">
             <div class="content__directions__title">Выбрать направление:</div>
-            <a href='#' onclick='window.open(`https://updn.pro/kurs/`)'><div class="content__directions__block all-course">Все</div></a>
-            <a href='#' onclick='window.open(`https://updn.pro/kurs/nutriciologiya-dopolnitelnoe-professionalnoe-obrazovanie/`)'><div class="content__directions__block nutrition-course">Нутрициология</div></a>
-            <a href='#' onclick='window.open(`https://updn.pro/kurs/sportivnaya-nutriciologiya/`)'><div class="content__directions__block sport-course">Спортивная нутрициология</div></a>
-            <a href='#' onclick='window.open(`https://updn.pro/kurs/psihologiya-pishchevogo-povedeniya/ `)'><div class="content__directions__block eating-behavior-course">Психология пищевого поведения</div></a>
-            <a href='#' onclick='window.open(`https://updn.pro/kurs/kursy-dlya-krasoty-i-zdorovya/`)'><div class="content__directions__block beauty-course">Курсы для красоты и здоровья</div></a> 
+            <a href='#' onclick='window.open(`https://updn.pro/kurs/`)' class="content__directions__link"><div class="content__directions__block all-course">Все</div></a>
+            <a href='#' onclick='window.open(`https://updn.pro/kurs/nutriciologiya-dopolnitelnoe-professionalnoe-obrazovanie/`)' class="content__directions__link"><div class="content__directions__block nutrition-course">Нутрициология</div></a>
+            <a href='#' onclick='window.open(`https://updn.pro/kurs/sportivnaya-nutriciologiya/`)' class="content__directions__link"><div class="content__directions__block sport-course">Спортивная нутрициология</div></a>
+            <a href='#' onclick='window.open(`https://updn.pro/kurs/psihologiya-pishchevogo-povedeniya/ `)' class="content__directions__link"><div class="content__directions__block eating-behavior-course">Психология пищевого поведения</div></a>
+            <a href='#' onclick='window.open(`https://updn.pro/kurs/kursy-dlya-krasoty-i-zdorovya/`)' class="content__directions__link"><div class="content__directions__block beauty-course">Курсы для красоты и здоровья</div></a> 
         </div>
 
         <button class="content__filtr-button">Показать фильтр</button>
         
         <div class="category">
-            <div class="form">
+            <div class="form-course">
 
-                <form class="form-block">
-                    <p class="form__p-cat">Категория:</p>
+                <form class="form-course-block">
+                    <p class="form-course__p-cat">Категория:</p>
 
-                    <label class="form__radio" for="radio_dop">
+                    <label class="form-course__radio" for="radio_dop">
                         <input id="radio_dop" class="radio-input" type="radio" name="category" value="Дополнительное профессиональное образование" hidden>
                         <div class="radio-button"></div>
                         <p class="radio-name">Дополнительное профессиональное образование</p>
                     </label>
                     
-                    <label class="form__radio" for="radio_qualifications">
+                    <label class="form-course__radio" for="radio_qualifications">
                         <input id="radio_qualifications" class="radio-input" type="radio" name="category" value="Повышение квалификации" hidden>
                         <div class="radio-button"></div>
                         <p class="radio-name">Повышение квалификации</p>
                     </label>
 
-                    <label class="form__radio" for="radio_training">
+                    <label class="form-course__radio" for="radio_training">
                         <input id="radio_training" class="radio-input" type="radio" name="category" value="Тренинг" hidden>
                         <div class="radio-button"></div>
                         <p class="radio-name">Тренинг</p>
                     </label>
                         
-                    <p class="form__p-duration">Длительность:</p>
+                    <p class="form-course__p-duration">Длительность:</p>
 
-                    <div class="form__slidecontainer">
+                    <div class="form-course__slidecontainer">
                         <div class="slide-track"></div>
                         <input type="range" min="1" max="730" value="730" class="slider" id="myRange-upper">
                         <input type="range" min="1" max="730" value="1" class="slider" id="myRange-lower">
                     </div>
 
-                    <p class="form__p-slide">От <span id="min">1</span> <span id="month-lower">дня</span> до <span id="max">730</span> <span id="month-upper">дней</span></p>
+                    <p class="form-course__p-slide">От <span id="min">1</span> <span id="month-lower">дня</span> до <span id="max">730</span> <span id="month-upper">дней</span></p>
                
-                    <p class="form__p-result">Результат:</p>
+                    <p class="form-course__p-result">Результат:</p>
                         
-                    <label class="form__radio" for="radio_certificate">
+                    <label class="form-course__radio" for="radio_certificate">
                         <input id="radio_certificate" class="radio-input" type="radio" name="result" value="С получением сертификата" hidden>
                         <div class="radio-button"></div>
                         <p class="radio-name">С получением сертификата</p>
                     </label>
 
-                    <label class="form__radio" for="radio_diplom">
+                    <label class="form-course__radio" for="radio_diplom">
                         <input id="radio_diplom" class="radio-input" type="radio" name="result" value="С получением диплома" hidden>
                         <div class="radio-button"></div>
                         <p class="radio-name">С получением диплома</p>
                     </label>
 
-                    <label class="form__radio" for="radio_card">
+                    <label class="form-course__radio" for="radio_card">
                         <input id="radio_card" class="radio-input" type="radio" name="result" value="С удостоверением о повышении квалификации" hidden>
                         <div class="radio-button"></div>
                         <p class="radio-name">С удостоверением о повышении квалификации</p>
@@ -141,8 +141,8 @@
 
                 </form>
 
-                <button class="form__button-apply">Применить</button>
-                <button class="form__button-reset">Сбросить фильтр</button>
+                <button class="form-course__button-apply">Применить</button>
+                <button class="form-course__button-reset">Сбросить фильтр</button>
 
             </div>
             
@@ -153,7 +153,7 @@
         
     </div>
 
-   <footer  class="footer">
+   <!-- <footer  class="footer">
     <div class="footer__block">
         <div class="footer__block__column">
             <p>Рационы и рецепты</p>
@@ -188,7 +188,7 @@
         <div class="footer__block__column"></div>
     </div>
 
-   </footer>
+   </footer> -->
 
    <script src="index.js"></script>
 
