@@ -1,19 +1,19 @@
 const courses = [
     {
         id: 'molecular-5p-nutritionist',
-        name: 'Молекулярный 5П-нутрициолог',
-        text: 'Инновационная профессия с присвоением новых квалификаций 5P-Health Tracker и молекулярный  5П-нутрициолог',
+        name: 'Молекулярный 5П-нутрициолог', //Название курса
+        text: 'Инновационная профессия с присвоением новых квалификаций 5P-Health Tracker и молекулярный  5П-нутрициолог', //Краткое описание курса
         p: ['Работа на молекулярном и генетическом уровнях с высокой точностью и гарантией результата',
         'Синтез генетики, диетологии и биохимии для предотвращения и лечения заболеваний',
-        'Юридические нюансы деятельности нутрициолога'],
+        'Юридические нюансы деятельности нутрициолога'], //Подпункты описания курса
         url: 'https://lp.updn.info/molecule_5p?utm_source=soc&utm_medium=seo',
-        category: 'Дополнительное профессиональное образование', //Дополнительное профессиональное образование
-        categoryCourse: 'Кафедра',
-        categoryResalt: 'Диплом',
-        duration: '6 месяцев',
-        month: 6,
-        result: 'С получением диплома', //С получением сертификата
-        type: 'nutrition',
+        category: 'Дополнительное профессиональное образование', //Категория курса
+        categoryResalt: 'Диплом', //Первая цветная плашка в блоке курса
+        categoryCourse: 'Кафедра', //Вторая цветная плашка в блоке курса
+        duration: '6 месяцев', //Срок обучения
+        days: 182, //Срок обучения в днях для вычисления в фильтре
+        result: 'С получением диплома', //Результат
+        type: 'nutrition', //Направление курса
     },
     
     {
@@ -24,11 +24,11 @@ const courses = [
          'Научитесь выявлять расстройства пищевого поведения',
          'Овладеете знаниями по лабораторной диагностике'],
         url: 'https://lp.updn.info/nutritionology_seo?utm_source=soc&utm_medium=seo',
-        category: 'Дополнительное профессиональное образование', //Дополнительное профессиональное образование
+        category: 'Дополнительное профессиональное образование',
         categoryCourse: 'Кафедра',
         duration: '6 месяцев',
-        month: 6,
-        result: 'С получением диплома', //С получением сертификата
+        days: 182,
+        result: 'С получением диплома',
         categoryResalt: 'Диплом',
         type: 'nutrition',
     },
@@ -42,11 +42,11 @@ const courses = [
          'Здоровый образ жизни: от питания до физической активности',
          'Нутрицевтика: ключевые модули для здоровья человека'],
         url: 'https://xn--j1amdg6b.xn----7sbhdegumjf0agbb9c1e.xn--p1ai/zayavka_kouch_seo',
-        category: 'Дополнительное профессиональное образование', //Дополнительное профессиональное образование
+        category: 'Дополнительное профессиональное образование',
         categoryCourse: 'Кафедра',
         duration: '6 месяцев',
-        month: 6,
-        result: 'С получением диплома', //С получением диплома
+        days: 182,
+        result: 'С получением диплома',
         categoryResalt: 'Диплом',
         type: 'nutrition',
     },
@@ -59,11 +59,11 @@ const courses = [
          'Недостатки и противопоказания белково-углеводного чередования',
          'Разрешенные и запрещенные продукты на белково-углеводном чередовании'],
         url: 'https://lp.updn.info/sportspec',
-        category: 'Повышение квалификации', //Повышение квалификации
+        category: 'Повышение квалификации',
         categoryCourse: 'Курс',
         duration: '6 недель',
-        month: 1.38,
-        result: 'С получением сертификата', //С получением сертификата
+        days: 42,
+        result: 'С получением сертификата',
         categoryResalt: 'Сертификат',
         type: 'sport',
     },
@@ -76,11 +76,11 @@ const courses = [
          'Спортивные добавки',
          'Кетодиета, основы'],
         url: 'https://lp.updn.info/sportspec',
-        category: 'Повышение квалификации', //Повышение квалификации
+        category: 'Повышение квалификации',
         categoryCourse: 'Курс',
         duration: '6 недель',
-        month: 1.38,
-        result: 'С получением сертификата', //С получением сертификата
+        days: 42,
+        result: 'С получением сертификата',
         categoryResalt: 'Сертификат',
         type: 'sport',
     },
@@ -93,11 +93,11 @@ const courses = [
          'Условия набора мышечной массы',
          'Спортивные добавки'],
         url: 'https://lp.updn.info/sportspec',
-        category: 'Повышение квалификации', //Повышение квалификации
+        category: 'Повышение квалификации',
         categoryCourse: 'Курс',
         duration: '6 недель',
-        month: 1.38,
-        result: 'С получением сертификата', //С получением сертификата
+        days: 42,
+        result: 'С получением сертификата',
         categoryResalt: 'Сертификат',
         type: 'sport',
     },
@@ -108,11 +108,11 @@ const courses = [
         text: 'Освойте эффективные инструменты для обретения идеальной фигуры вами и вашими клиентами через проработку истинных психологических причин лишнего веса',
         p: [],
         url: 'https://updn.online/psychologist-consultant',
-        category: 'Дополнительное профессиональное образование', //Дополнительное профессиональное образование
+        category: 'Дополнительное профессиональное образование',
         categoryCourse: 'Кафедра',
         duration: '6 недель',
-        month: 1.38,
-        result: 'С получением диплома', //С получением диплома
+        days: 42,
+        result: 'С получением диплома',
         categoryResalt: 'Диплом',
         type: 'eatingBehavior',
     },
@@ -123,11 +123,11 @@ const courses = [
         text: 'Психолог-консультант — человек, который имеет знания в области нутрициологии и психологии и может оказать качественную поддержку своим подопечным.',
         p: [],
         url: 'https://updn.pro/kurs/psihologiya-pishhevogo-povedeniya/',
-        category: 'Повышение квалификации', //Повышение квалификации
+        category: 'Повышение квалификации',
         categoryCourse: 'Курс',
         duration: '6 недель',
-        month: 1.38,
-        result: 'С получением сертификата', //С получением сертификата
+        days: 42,
+        result: 'С получением сертификата',
         categoryResalt: 'Сертификат',
         type: 'eatingBehavior',
     },
@@ -138,11 +138,11 @@ const courses = [
         text: '',
         p: [],
         url: 'https://updn.online/5p_new?utm_source=soc&utm_medium=seo',
-        category: 'Повышение квалификации', //Повышение квалификации
+        category: 'Повышение квалификации',
         categoryCourse: 'Курс',
         duration: '6 месяцев',
-        month: 6,
-        result: 'С получением сертификата', //С получением сертификата
+        days: 182,
+        result: 'С получением сертификата',
         categoryResalt: 'Сертификат',
         type: 'nutrition',
     },
@@ -153,11 +153,11 @@ const courses = [
         text: '',
         p: [],
         url: 'https://xn--j1amdg6b.xn----7sbhdegumjf0agbb9c1e.xn--p1ai/zayavka_kouch_seo',
-        category: 'Повышение квалификации', //Повышение квалификации
+        category: 'Повышение квалификации',
         categoryCourse: 'Курс',
         duration: '6 месяцев',
-        month: 6,
-        result: 'С получением сертификата', //С получением сертификата
+        days: 182,
+        result: 'С получением сертификата',
         categoryResalt: 'Сертификат',
         type: 'nutrition',
     },
@@ -168,11 +168,11 @@ const courses = [
         text: '',
         p: [],
         url: 'https://xn--j1amdg6b.xn----7sbhdegumjf0agbb9c1e.xn--p1ai/zayavka_kouch_seo',
-        category: 'Повышение квалификации', //Повышение квалификации
+        category: 'Повышение квалификации',
         categoryCourse: 'Курс',
         duration: '6 месяцев',
-        month: 6,
-        result: 'С получением сертификата', //С получением сертификата
+        days: 182,
+        result: 'С получением сертификата',
         categoryResalt: 'Сертификат',
         type: 'nutrition',
     },
@@ -183,11 +183,11 @@ const courses = [
         text: '',
         p: [],
         url: 'https://xn--j1amdg6b.xn----7sbhdegumjf0agbb9c1e.xn--p1ai/zayavka_kouch_seo',
-        category: 'Повышение квалификации', //Повышение квалификации
+        category: 'Повышение квалификации',
         categoryCourse: 'Курс',
         duration: '6 месяцев',
-        month: 6,
-        result: 'С получением сертификата', //С получением сертификата
+        days: 182,
+        result: 'С получением сертификата',
         categoryResalt: 'Сертификат',
         type: 'nutrition',
     },
@@ -199,11 +199,11 @@ const courses = [
         p: ['Готовое решение в борьбе с дефицитами витаминов и минеральных веществ у взрослых и детей',
          'Избавление от таких состояний, как отсутствие энергии, лишний вес, ранние морщины, тусклые волосы, ощущение депрессии и других'],
         url: 'https://lid.nutritionist4day.ru/vmtransformation',
-        category: 'Повышение квалификации', //Повышение квалификации
+        category: 'Повышение квалификации',
         categoryCourse: 'Курс',
         duration: '6 недель',
-        month: 1.38,
-        result: 'С получением сертификата', //С получением сертификата
+        days: 42,
+        result: 'С получением сертификата',
         categoryResalt: 'Сертификат',
         type: 'beauty',
     },
@@ -215,11 +215,11 @@ const courses = [
         p: ['Профилактировать заболевания',
          'Решить уже существующие проблемы'],
         url: 'https://lid.nutritionist4day.ru/lymphatic-system',
-        category: 'Тренинг', //Тренинг
+        category: 'Тренинг',
         categoryCourse: 'Тренинг',
         duration: '6 недель',
-        month: 1.38,
-        result: 'С получением сертификата', //С получением сертификата
+        days: 42,
+        result: 'С получением сертификата',
         categoryResalt: 'Сертификат',
         type: 'beauty',
     },
@@ -230,11 +230,11 @@ const courses = [
         text: 'Получите здоровое стройное тело с помощью питания и новый уровень качества жизни',
         p: [],
         url: 'https://lid.nutritionist4day.ru/mybody ',
-        category: 'Тренинг', //Тренинг
+        category: 'Тренинг',
         categoryCourse: 'Тренинг',
         duration: '6 недель',
-        month: 1.38,
-        result: 'С получением сертификата', //С получением сертификата
+        days: 42,
+        result: 'С получением сертификата',
         categoryResalt: 'Сертификат',
         type: 'beauty',
     },
@@ -248,11 +248,11 @@ const courses = [
          'Комплексный подход, который игнорируют хирурги и косметологи',
          'До минус 15 лет без инъекций и подтяжек'],
         url: 'https://lp.updn.info/clas_antiage',
-        category: 'Тренинг', //Тренинг
+        category: 'Тренинг',
         categoryCourse: 'Тренинг',
         duration: '6 недель',
-        month: 1.38,
-        result: 'С получением сертификата', //С получением сертификата
+        days: 42,
+        result: 'С получением сертификата',
         categoryResalt: 'Сертификат',
         type: 'beauty',
     },
@@ -263,11 +263,11 @@ const courses = [
         text: 'Избавьтесь от паразитов гарантированно, безопасно и без медикаментов',
         p: ['Надёжно защитите себя и близких от паразитов в будущем'],
         url: 'https://lid.nutritionist4day.ru/antiparasitic',
-        category: 'Тренинг', //Тренинг
+        category: 'Тренинг',
         categoryCourse: 'Тренинг',
         duration: '6 недель',
-        month: 1.38,
-        result: 'С получением сертификата', //С получением сертификата
+        days: 42,
+        result: 'С получением сертификата',
         categoryResalt: 'Сертификат',
         type: 'beauty',
     },
@@ -281,11 +281,11 @@ const courses = [
          'Поймете откуда возникают различные патологии в кишечнике и узнаете современные методы их лечения',
          'Вы избавитесь от запоров'],
         url: 'https://updn.pro/kurs/onlajn-kurs-mikrobiota-kishechnika/ ',
-        category: 'Тренинг', //Тренинг
+        category: 'Тренинг',
         categoryCourse: 'Тренинг',
         duration: '6 недель',
-        month: 1.38,
-        result: 'С получением сертификата', //С получением сертификата
+        days: 42,
+        result: 'С получением сертификата',
         categoryResalt: 'Сертификат',
         type: 'beauty',
     },
@@ -297,11 +297,11 @@ const courses = [
         p: ['Профилактируйте повышенный уровень холестерина и заболевания, к которым он приводит',
          'Научитесь снижать высокий холестерин и поддерживать его на оптимальном уровне'],
         url: 'https://lid.nutritionist4day.ru/cholesterol',
-        category: 'Тренинг', //Тренинг
+        category: 'Тренинг',
         categoryCourse: 'Тренинг',
         duration: '6 недель',
-        month: 1.38,
-        result: 'С получением сертификата', //С получением сертификата
+        days: 42,
+        result: 'С получением сертификата',
         categoryResalt: 'Сертификат',
         type: 'beauty',
     },
@@ -314,11 +314,11 @@ const courses = [
          'Грамотно проведете диагностику причин абдоминального ожирения',
          'Подберете лабораторные анализы для диагностики'],
         url: 'https://updn.pro/kurs/kak-ubrat-zhivot/ ',
-        category: 'Тренинг', //Тренинг
+        category: 'Тренинг',
         categoryCourse: 'Тренинг',
         duration: '6 недель',
-        month: 1.38,
-        result: 'С получением сертификата', //С получением сертификата
+        days: 42,
+        result: 'С получением сертификата',
         categoryResalt: 'Сертификат',
         type: 'beauty',
     },
@@ -331,11 +331,11 @@ const courses = [
          'Жить в стройном теле с удовольствием, не думая о шоколадке каждый час',
          'Не навредить организму при снижении веса — все только с пользой для здоровья!'],
         url: 'https://lid.nutritionist4day.ru/slender-bodyful',
-        category: 'Тренинг', //Тренинг
+        category: 'Тренинг',
         categoryCourse: 'Тренинг',
         duration: '6 недель',
-        month: 1.38,
-        result: 'С получением сертификата', //С получением сертификата
+        days: 42,
+        result: 'С получением сертификата',
         categoryResalt: 'Сертификат',
         type: 'beauty',
     },
@@ -382,19 +382,19 @@ buttonApply.addEventListener('click', function() {
     let result 
 
     if (onRadiosResult == '') {
-        result = courses.filter(item => {return item.category == onRadiosCategory && item.month <= onSliderMax && item.month >= onSliderMin});
+        result = courses.filter(item => {return item.category == onRadiosCategory && item.days <= onSliderMax && item.days >= onSliderMin});
     } 
 
     if (onRadiosCategory == '') {
-        result = courses.filter(item => {return item.result == onRadiosResult && item.month <= onSliderMax && item.month >= onSliderMin});
+        result = courses.filter(item => {return item.result == onRadiosResult && item.days <= onSliderMax && item.days >= onSliderMin});
     } 
 
     if (onRadiosResult != '' && onRadiosCategory != '') {
-        result = courses.filter(item => {return item.category == onRadiosCategory  && item.result == onRadiosResult && item.month <= onSliderMax && item.month >= onSliderMin});
+        result = courses.filter(item => {return item.category == onRadiosCategory  && item.result == onRadiosResult && item.days <= onSliderMax && item.days >= onSliderMin});
         } 
         
     if (onRadiosResult == '' && onRadiosCategory == '') {
-        result = courses.filter(item => {return item.month <= onSliderMax && item.month >= onSliderMin});
+        result = courses.filter(item => {return item.days <= onSliderMax && item.days >= onSliderMin});
         } 
 
 
@@ -416,7 +416,7 @@ buttonApply.addEventListener('click', function() {
     let outputMax = document.getElementById("max");
     let outputMin = document.getElementById("min");
     let slideTrack = document.querySelector(".slide-track");
-    let onSliderMax = 24;
+    let onSliderMax = 730;
     let onSliderMin = 1;
 
     sliderUpper.oninput = function() {
@@ -429,7 +429,7 @@ buttonApply.addEventListener('click', function() {
             sliderUpper.value = onSliderMax
         } 
         
-        monthUpper.innerHTML = (onSliderMax == 1 || onSliderMax == 21) ? 'месяца' : 'месяцев';
+        monthUpper.innerHTML = (onSliderMax%10 == 1) ? 'дня' : 'дней';
         colorSlideTrack(onSliderMax, onSliderMin) ;
     }
 
@@ -443,7 +443,7 @@ buttonApply.addEventListener('click', function() {
         }
 
         if (onSliderMin > 1) {
-            monthLower.innerHTML = (onSliderMin == 21) ? 'месяца' : 'месяцев';
+            monthLower.innerHTML = (onSliderMin%10 == 1) ? 'дня' : 'дней';
         } else {
             monthLower.innerHTML = 'дня';
         }
@@ -452,8 +452,8 @@ buttonApply.addEventListener('click', function() {
     }
 
     function colorSlideTrack(onSliderMax, onSliderMin) {
-        let positionSliderMax = onSliderMax * 100 / 24 - 2;
-        let positionSliderMin = onSliderMin * 100 / 24 - 2;
+        let positionSliderMax = onSliderMax * 100 / 730 - 2;
+        let positionSliderMin = onSliderMin * 100 / 730 - 2;
         slideTrack.style.background = `linear-gradient(to right,  #DBEDFF ${positionSliderMin}%, #1D7AD3 ${positionSliderMin}%, #1D7AD3 ${positionSliderMax}%, #DBEDFF ${positionSliderMax}%)`;
     }
 
@@ -468,13 +468,13 @@ buttonReset.addEventListener('click', function() {
     }
     onRadiosCategory = ''
     onRadiosResult = ''
-    sliderUpper.value = 24
+    sliderUpper.value = 730
     sliderLower.value = 1
-    onSliderMax = 24;
+    onSliderMax = 730;
     onSliderMin = 1
     outputMax.innerHTML = sliderUpper.value;
     outputMin.innerHTML = sliderLower.value;
-    monthUpper.innerHTML = 'месяцев';
+    monthUpper.innerHTML = 'дней';
     monthLower.innerHTML = 'дня';
     slideTrack.style.background = '#1D7AD3'
     colorSlideTrack(onSliderMax, onSliderMin)
@@ -560,7 +560,7 @@ function render(arr) {
 
     for (let i=0; i<arr.length; i++) {
         let string1 = 
-        `<div class="courses__block cours-hight${i}" id="${arr[i].id}">
+        `<div class="courses__block">
                     <div class="courses__block__category">
                         <div class="courses__block__category-first">${arr[i].categoryResalt}</div>
                         <div class="courses__block__category-second">${arr[i].categoryCourse}</div>

@@ -508,14 +508,6 @@ a {
     }
 }
 
-#psychologist-coach-weight-correction, 
-    #psychology-eating-behavior {
-    .courses__block__text {
-        font-weight: 400;
-        font-size: 14px;
-    }
-}
-
 .blue-button {
     background-color: #1D7AD3;
     color: white;
@@ -786,12 +778,11 @@ a {
     }
 
     .courses {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-items: center;
-        align-items: start;
+        justify-content: flex-start;
         gap: 20px;
+        width: calc(100% - 360px);
         &__block {
+            width: 32%;
             max-width: 357px;
             box-sizing: border-box;
             padding: 20px;
@@ -850,62 +841,6 @@ a {
             }
         }
     }
-
-    #molecular-5p-nutritionist, #full-course, #nutrition-coach {
-        height: 572px;
-    }
-
-    #protein-carbohydrate-alternation,
-    #drying,
-    #gain-muscle-mass {
-        height: 438px;
-    }
-
-    #psychologist-coach-weight-correction,
-    #psychology-eating-behavior {
-        height: 426px;
-    }
-
-    #business-5p,
-    #expert-laboratory-diagnostics,
-    #specialist-5P-nutritionology-protocols {
-        height: 301px;
-    }
-
-    #specialist-consulting-professional {
-        height: 352px;
-    }
-
-    #vitamin-mineral-transformation,
-    #all-about-lymphatic-system,
-    #nutritionist-for-family {
-        height: 469px;
-    }
-
-    #antiage,
-    #antiparasitic-program,
-    #healthy-intestines {
-        height: 519px;
-    }
-
-    #cholesterol-control,
-    #remove-belly,
-    #slim-body {
-        height: 565px;
-    }
-
-    #drying,  #gain-muscle-mass {
-    .courses__block__text {
-        margin-bottom: 29px;
-    }
-    }
-
-    #psychologist-coach-weight-correction, 
-    #psychology-eating-behavior {
-    .courses__block__text {
-        font-size: 16px;
-    }
-}
 
     .footer {
 
