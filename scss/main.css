@@ -469,7 +469,7 @@ body {
   .category {
     align-items: start;
     margin-top: 52px;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 40px;
   }
   .form-course {
@@ -505,7 +505,7 @@ body {
     margin-top: 60px;
   }
   .courses {
-    justify-content: space-between;
+    justify-content: flex-start;
   }
   .courses__block {
     width: calc((100% - 40px) / 3);

@@ -484,7 +484,7 @@ body {
     .category {
         align-items: start;
         margin-top: 52px;
-        justify-content: space-between;
+        justify-content: flex-start;
         gap: 40px;
     }
 
@@ -522,7 +522,8 @@ body {
     }
 
     .courses {
-        justify-content: space-between;
+        // flex-basis: 70%;
+        justify-content: flex-start;
         &__block {
             width: calc(( 100% - 40px ) / 3);
             box-sizing: border-box;
