@@ -345,16 +345,16 @@ const courses = [
 
 const blockCourses = document.querySelector('.courses')
 const filtrButton = document.querySelector('.content__filtr-button');
-const form = document.querySelector('.form');
-const formBlock = document.querySelector('.form-block');
+const form = document.querySelector('.form-course');
+const formBlock = document.querySelector('.form-course-block');
 const allCourse = document.querySelector('.all-course');
 const nutritionCourse = document.querySelector('.nutrition-course');
 const sportCourse = document.querySelector('.sport-course');
 const eatingBehaviorCourse = document.querySelector('.eating-behavior-course');
-const buttonApply = document.querySelector('.form__button-apply');
-const buttonReset = document.querySelector('.form__button-reset');
+const buttonApply = document.querySelector('.form-course__button-apply');
+const buttonReset = document.querySelector('.form-course__button-reset');
 const beautyCourse = document.querySelector('.beauty-course');
-const formBlack = document.querySelector('.form-black');
+const formBlack = document.querySelector('.form-course-black');
 const radiosCategory = document.querySelectorAll('input[name="category"]');
 const radiosResult = document.querySelectorAll('input[name="result"]');
 let onRadiosCategory = ''
