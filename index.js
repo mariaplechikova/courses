@@ -452,8 +452,8 @@ buttonApply.addEventListener('click', function() {
     }
 
     function colorSlideTrack(onSliderMax, onSliderMin) {
-        let positionSliderMax = onSliderMax * 100 / 730 - 2;
-        let positionSliderMin = onSliderMin * 100 / 730 - 2;
+        let positionSliderMax = onSliderMax * 100 / 730;
+        let positionSliderMin = onSliderMin * 100 / 730;
         slideTrack.style.background = `linear-gradient(to right,  #DBEDFF ${positionSliderMin}%, #1D7AD3 ${positionSliderMin}%, #1D7AD3 ${positionSliderMax}%, #DBEDFF ${positionSliderMax}%)`;
     }
 

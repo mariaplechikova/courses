@@ -88,8 +88,9 @@ body {
 .form-course {
   display: none;
   position: absolute;
-  top: 570px;
-  left: calc(50% - 167px);
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 2;
   background-color: white;
   width: 335px;
@@ -103,7 +104,6 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  width: 100%;
   margin: 0;
   margin-top: 10px;
   padding: 0;
@@ -114,6 +114,7 @@ body {
 }
 .form-course__radio .radio-button {
   width: 16px;
+  min-width: 16px;
   height: 16px;
   border-radius: 50%;
   background: white;
@@ -122,20 +123,13 @@ body {
   padding: 0;
   margin: 0;
 }
-.form-course__radio .radio-button__point {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #1D7AD3;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
 .form-course__radio .radio-button::before {
   content: "";
   position: absolute;
-  top: 4px;
-  left: 4px;
-  display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -149,19 +143,17 @@ body {
 .form-course__radio .radio-name {
   margin: 0;
   padding: 0;
-  width: calc(100% - 30px);
 }
 .form-course__p-cat {
-  width: 100%;
   font-size: 16px;
   font-weight: 400;
   margin: 0;
   padding: 0;
 }
 .form-course__p-duration {
-  width: 100%;
   font-size: 16px;
   font-weight: 400;
+  margin: 0;
   margin-top: 18px;
   margin-bottom: 10px;
   padding: 0;
@@ -289,21 +281,13 @@ body {
   margin-top: 24px;
   box-sizing: border-box;
   color: #3A3849;
-  overflow: visible;
+  position: relative;
 }
 
 .courses {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  box-sizing: border-box;
-}
-.courses__item {
-  width: 100%;
-  margin: 0;
-  padding: 0 0 15px;
-  max-width: 335px;
-  min-height: 280px;
   box-sizing: border-box;
 }
 .courses__block {
@@ -364,9 +348,9 @@ body {
   font-weight: 400;
   display: flex;
   margin-top: 10px;
+  gap: 14px;
 }
 .courses__block__point {
-  margin-right: 14px;
   display: flex;
   align-items: center;
 }
@@ -473,13 +457,14 @@ body {
     gap: 40px;
   }
   .form-course {
-    flex-basis: 301px;
+    width: 301px;
     min-width: 301px;
     padding: 15px 12px 35px 12px;
     display: block;
     position: relative;
     top: auto;
     left: auto;
+    transform: none;
     font-size: 16px;
   }
   .form-course__radio {
@@ -549,9 +534,7 @@ body {
     display: flex;
     margin-top: 10px;
     line-height: 20.8px;
-  }
-  .courses__block__p div:first-of-type {
-    margin-right: 10px;
+    gap: 10px;
   }
   .courses__block__duration {
     font-size: 16px;
