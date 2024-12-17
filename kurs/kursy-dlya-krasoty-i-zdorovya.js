@@ -355,21 +355,18 @@ const buttonApply = document.querySelector('.form-course__button-apply');
 const buttonReset = document.querySelector('.form-course__button-reset');
 const beautyCourse = document.querySelector('.beauty-course');
 const breadcrumbsCurrent = document.querySelector('.bread-crumbs__current');
-const breadcrumbsKurs = document.querySelector('.bread-crumbs__kurs');
 const formBlack = document.querySelector('.form-course-black');
 const radiosCategory = document.querySelectorAll('input[name="category"]');
 const radiosResult = document.querySelectorAll('input[name="result"]');
 let onRadiosCategory = ''
 let onRadiosResult = ''
 let newCourses = []
-let newCoursesNutrition = []
-let newCoursesSport = []
-let newCoursesEating = []
-let newCoursesBeauty = []
 
-render(courses)
-newCourses = newCourses.concat(courses)
-allCourse.classList.add('blue-button')
+let result = courses.filter(item => {return item.type === 'beauty'});
+newCourses = newCourses.concat(result)
+beautyCourse.classList.add('blue-button')
+breadcrumbsCurrent.innerHTML = '/ Курсы для красоты и здоровья'
+render(newCourses)
 
 // Cнимаем показания с формы
 formBlock.addEventListener('click', function() {
@@ -521,24 +518,6 @@ formBlack.addEventListener('click', function() {
     filtrButton.textContent = filtrButton.textContent === 'Скрыть фильтр' ? 'Показать фильтр': 'Скрыть фильтр';
     form.style.display = form.style.display === 'block' ? 'none' : 'block';
     formBlack.style.display = formBlack.style.display === 'block' ? 'none' : 'block';
-})
-
-
-// Фильтр по направлениям
-allCourse.addEventListener('click', function() {
-
-})
-nutritionCourse.addEventListener('click', function() {
-    
-})
-sportCourse.addEventListener('click', function() {
-    
-})
-eatingBehaviorCourse.addEventListener('click', function() {
-    
-})
-beautyCourse.addEventListener('click', function() {
-    
 })
 
 

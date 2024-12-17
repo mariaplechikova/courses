@@ -11,7 +11,7 @@ const courses = [
         categoryResalt: 'Диплом', //Первая цветная плашка в блоке курса
         categoryCourse: 'Кафедра', //Вторая цветная плашка в блоке курса
         duration: '6 месяцев', //Срок обучения
-        days: 182, //Срок обучения в днях для вычисления в фильтре
+        days: 42, //Срок обучения в днях для вычисления в фильтре
         result: 'С получением диплома', //Результат
         type: 'nutrition', //Направление курса
     },
@@ -355,21 +355,19 @@ const buttonApply = document.querySelector('.form-course__button-apply');
 const buttonReset = document.querySelector('.form-course__button-reset');
 const beautyCourse = document.querySelector('.beauty-course');
 const breadcrumbsCurrent = document.querySelector('.bread-crumbs__current');
-const breadcrumbsKurs = document.querySelector('.bread-crumbs__kurs');
 const formBlack = document.querySelector('.form-course-black');
 const radiosCategory = document.querySelectorAll('input[name="category"]');
 const radiosResult = document.querySelectorAll('input[name="result"]');
 let onRadiosCategory = ''
 let onRadiosResult = ''
 let newCourses = []
-let newCoursesNutrition = []
-let newCoursesSport = []
-let newCoursesEating = []
-let newCoursesBeauty = []
 
-render(courses)
-newCourses = newCourses.concat(courses)
-allCourse.classList.add('blue-button')
+let result = courses.filter(item => {return item.type === 'nutrition'});
+newCourses = newCourses.concat(result)
+nutritionCourse.classList.add('blue-button')
+breadcrumbsCurrent.innerHTML = '/ Нутрициология: дополнительное профессиональное образование, повышение квалификации';
+render(newCourses)
+
 
 // Cнимаем показания с формы
 formBlock.addEventListener('click', function() {
@@ -523,23 +521,6 @@ formBlack.addEventListener('click', function() {
     formBlack.style.display = formBlack.style.display === 'block' ? 'none' : 'block';
 })
 
-
-// Фильтр по направлениям
-allCourse.addEventListener('click', function() {
-
-})
-nutritionCourse.addEventListener('click', function() {
-    
-})
-sportCourse.addEventListener('click', function() {
-    
-})
-eatingBehaviorCourse.addEventListener('click', function() {
-    
-})
-beautyCourse.addEventListener('click', function() {
-    
-})
 
 
 // Отрисовка курсов

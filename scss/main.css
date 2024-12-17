@@ -28,6 +28,16 @@ body {
   text-align: left;
   width: 100%;
 }
+.content__bread-crumbs a {
+  text-decoration: none;
+  color: #000000;
+}
+.content__bread-crumbs .bread-crumbs__main:hover {
+  cursor: pointer;
+}
+.content__bread-crumbs .bread-crumbs__kurs:hover {
+  cursor: pointer;
+}
 .content__title {
   font-size: 32px;
   margin-top: 6px;
@@ -48,6 +58,9 @@ body {
   color: #3A3849;
   font-size: 16px;
   font-weight: 400;
+}
+.content__directions a {
+  text-decoration: none;
 }
 .content__directions__link {
   text-decoration: none;
@@ -205,6 +218,10 @@ body {
   font-size: 16px;
   font-weight: 500;
   font-family: "DIN Pro", sans-serif;
+}
+.form-course__button-reset a {
+  text-decoration: none;
+  color: #3A3849;
 }
 .form-course__button-reset:hover {
   cursor: pointer;
@@ -491,6 +508,7 @@ body {
   }
   .courses {
     justify-content: flex-start;
+    flex-grow: 1;
   }
   .courses__block {
     width: calc((100% - 40px) / 3);

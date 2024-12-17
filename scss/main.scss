@@ -31,6 +31,16 @@ body {
         font-weight: 400;
         text-align: left;
         width: 100%;
+        & a {
+            text-decoration: none;
+            color: #000000;
+        }
+        & .bread-crumbs__main:hover {
+            cursor: pointer;
+        }
+        & .bread-crumbs__kurs:hover {
+            cursor: pointer;
+        }
     }
     &__title {
         font-size: 32px;
@@ -52,6 +62,9 @@ body {
         color: #3A3849;
         font-size: 16px;
         font-weight: 400;
+        & a {
+            text-decoration: none;
+        }
         &__link{
             text-decoration: none;
         }
@@ -210,6 +223,10 @@ body {
         font-size: 16px;
         font-weight: 500;
         font-family: 'DIN Pro', sans-serif;
+        & a {
+            text-decoration: none;
+            color: #3A3849;
+        }
         &:hover { 
             cursor: pointer;
         } 
@@ -505,6 +522,7 @@ body {
 
     .courses {
         justify-content: flex-start;
+        flex-grow: 1;
         &__block {
             width: calc(( 100% - 40px ) / 3);
             box-sizing: border-box;
